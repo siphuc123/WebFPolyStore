@@ -1,3 +1,87 @@
-body {
-    color: antiquewhite;
+ body {
+    /* background: linear-gradient(-45deg, #1E3163, #2D46B9, #F037A5, #F8F8F8);
+    background-size: 400% 400%;
+    animation: gradient 5s ease infinite; */
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);;
+}
+/* 
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}  */
+
+.boxcenter {
+    width: 90%;
+    margin: 0px auto;
+}
+.boxleft{
+    float: left;
+    width: 40%;
+    background-color: aqua;
+    margin-right: 10%;
+    margin-left: 10%;
+    min-height: 1000px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+.boxleft img {
+    float: left;
+    margin-top: 1px;
+    margin-right: 15px;
+    margin-bottom: 20px;  
+}
+.boxright{
+    float: left;
+    background-color: royalblue;
+    width: 30%;
+    min-height: 600px;
+    margin-top: 20px;
+}
+.boxright img {
+    width: 85%;
+    float: left;
+}
+hr {
+    clear: both;
+}
+header>img {
+    float: left;
+    margin-bottom: 10px;
+}
+div>a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    word-spacing: 1px;
+}
+
+.Menu{
+    background-color: #dd5a5a;
+    text-align: center;
+    border: 3px solid #000000;
+    padding: 3px;
+    display: block;
+    box-shadow: inset 0 0 20px antiquewhite;
+}
+
+div>#tin {
+    text-shadow: 0px 0px 4px yellow;
+    text-decoration: none;
+    padding: 5px;
+
+}
+
+.title {
+    margin-left:4%;
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    color: orangered;
 }
