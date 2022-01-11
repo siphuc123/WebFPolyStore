@@ -1,9 +1,46 @@
- body {
+body {
     /* background: linear-gradient(-45deg, #1E3163, #2D46B9, #F037A5, #F8F8F8);
     background-size: 400% 400%;
     animation: gradient 5s ease infinite; */
     background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);;
 }
+html{
+    font-size: 96%;
+}
+
+.box {
+    background-color: aqua;
+    width: 80%;
+    margin: 0px auto;
+    height: 1000px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.h1>.sp {
+    float: left;
+    margin-left: 8px;
+}
+.box>.sp{
+    float: left;
+    margin:;
+}
+.sp img{
+    width: 15rem;
+    height: auto;
+}
+.sp>a { 
+    color: black;
+}
+span{
+    border: 1px solid black;
+}
+.sp{
+    width: 15rem;
+    height: auto;
+    background-color: white;
+    
+}
+
 /* 
 @keyframes gradient {
     0% {
@@ -17,18 +54,25 @@
     }
 }  */
 
-.boxcenter {
+/* .boxcenter {
     width: 90%;
     margin: 0px auto;
 }
 .boxleft{
     float: left;
-    width: 40%;
+    width: 64%;
     background-color: aqua;
     margin-right: 10%;
     margin-left: 10%;
     min-height: 1000px;
     margin-bottom: 20px;
+    margin-top: 20px; 
+}
+.boxright {
+    float: right;
+    background-color: royalblue;
+    width: 30%;
+    min-height: 600px;
     margin-top: 20px;
 }
 .boxleft img {
@@ -37,17 +81,11 @@
     margin-right: 15px;
     margin-bottom: 20px;  
 }
-.boxright{
-    float: left;
-    background-color: royalblue;
-    width: 30%;
-    min-height: 600px;
-    margin-top: 20px;
-}
+
 .boxright img {
     width: 85%;
     float: left;
-}
+} */
 hr {
     clear: both;
 }
@@ -84,4 +122,14 @@ div>#tin {
     font-size: 20px;
     font-weight: bold;
     color: orangered;
+}
+/* chinh header */
+header>.head {
+    width: 100%;
+    height: auto;
+}
+/* chinh footer */
+footer img {
+    width: 100%;
+    height: auto;
 }
