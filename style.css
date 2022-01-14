@@ -1,3 +1,26 @@
+ /* menu ở giữa đẹp */
+.menu>ul>li>a {
+    display: inline-block;
+    transition: all .5s ease;
+    color: #001F3F;
+    padding: 4px 0px;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 1;
+    font-size: 15px;
+    background-color:  transparent;
+    border-radius: 4px;
+    transform: translateX(-30%);
+    position: relative;
+    text-decoration: none;
+}
+/* hiệu ứng cho mấy cái chữ bên trong */
+.menu>ul>li:hover>a {
+    padding: 0px;
+    color: orangered;
+    box-shadow: 0 10px 20px -8px rgba(0, 0, 0,.7);
+}
+
 /* reset css */
 *{
     margin: 0px;
@@ -18,7 +41,7 @@ html{
 /* Khung chung gồm logo và tìm kiếm vỏ hàng */
 .top{
     position: relative;
-    padding: 0px;
+    padding: 5px;
     width: 100%;
     float: right;
 }
@@ -43,29 +66,33 @@ div.search{
     line-height: 80px;
 }
 div.search>input {
-    font-size: 18px;
+    font-size: 19px;
     border: 2px solid gray;
     border-radius: 7px 0px 0px 5px;
     padding-left: 10px;
     line-height: 20px;  
     font-weight: bold;
+    height: 40px;
 }
 div.search>a.timkiem{
     font-size: 24px;
     position: absolute;
-    top:3px;
-    right:135px;
+    top:7px;
+    right:139px;
 }
 .timkiem>i{
-    color: grey;
+    color: orangered;
 }
 .search>a.giohang{
     border: 1px solid #8f8f8f;
     border-radius: 4px;
-    margin-left: 10px;
-    margin-right: 10px;
-    padding: 9px 8px;
+    margin-left: 5px;
+    margin-right: 5px;
+    padding: 10px;
     color: gray;
+    text-shadow: 0px 0px 2px orangered;
+    word-spacing: -3px;
+    font-size: 18px;
 }
 .search>a.giohang>b{
     font-size: 17px;
@@ -74,23 +101,26 @@ div.search>a.timkiem{
 }
 /* menu */
 .menu>ul{
-    line-height: 50px;
-    margin:0px 0px;
-    padding:0px;
-    border-radius:5px;
-    list-style:none;
-    height:40px;
+    list-style-type: none;
+    position: absolute;
+    top: -45px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: inline-block; 
+    border: 2px solid gray;
+    border-radius: 30px;
 }
-.menu>ul>li>a{
-    line-height:40px;
-    font-size: 1.5rem;
-    text-decoration: none;
-    padding-left: 50px;
-    color: black;
+div.menu {
+    position: relative;
+    display: flex;
+    margin: 0px auto;
+    padding: 0px 30px;
 }
 .menu>ul>li{
     float:left;
-    margin:0 5px;
+    margin: 0px 5px;
+    border: 2px solid transparent; 
+    padding: 12px;
 }
 /* ảnh header  */
 header img{
@@ -155,9 +185,9 @@ br{
 
 /* Khung nhỏ chứa 1 sản phẩm */
 .sp{
-    width: 19.1%;
+    width: 19%;
     line-height: 26px;
-    box-shadow: 0px 0px 1px gray;
+    box-shadow: 0px 0px 5px red;
     float: left;
     margin: 5px 0px;
     margin-left: 11.5px;
@@ -166,7 +196,8 @@ br{
 /* chỉnh hiệu ứng khi di chuột vào khung sản phẩm nhỏ */
 .sp:hover{
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    transition: all .3s linear;
+    transform: translateY(-5px) ;
+    transition: 250ms;
 }
 /* ảnh của 1 sản phẩm */
 .sp img{
@@ -179,9 +210,13 @@ span{
 /* Tên sản phẩm  */
 .sp a{
     color: black;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     font-family: Arial;
     text-decoration: none;
+}
+del{
+    color: gray;
+    font-size: 0.9rem;
 }
 /* hiệu ứng khi di chuột vào tên  */
 .sp a:hover{
