@@ -106,6 +106,10 @@ header img{
     z-index: 1;
     margin: 20px auto;
 }
+
+.danhmuc> div >a>img{
+    border-radius: 30px;
+}
 /* Khung to chứa nhiều sản phẩm */
 .box {
     width: 80%;
