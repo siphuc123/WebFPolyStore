@@ -13,7 +13,7 @@ html{
 }
 /* (Lớp giả) đỗi màu chung*/
 :root{
-    --text-color:brown;
+    --text-color:rgb(190, 34, 34);
 }
 /* Khung chung gồm logo và tìm kiếm vỏ hàng */
 .top{
@@ -101,31 +101,67 @@ header img{
 .danhmuc{
     width: 80%;
     margin: 0px auto;
-    height: 50px;
+    height: 70px;
     border: 1px solid var(--text-color);
     z-index: 1;
-    margin: 20px auto;
+    line-height: 98px;
+    text-align: center;
+    border-radius: 30px;
+    background-color: black
 }
 
-.danhmuc> div >a>img{
-    border-radius: 30px;
+.danhmuc a img{
+    border-radius:  30px;
+    margin: 0px 10px;
 }
-/* Khung to chứa nhiều sản phẩm */
-.box {
+/* khung 1 */
+.boxnoibat{
     width: 80%;
+    min-height: 1115px;
     margin: 0px auto;
-    height: 2000px;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    background-color: yellow;
+    margin-top: 50px;
     text-align: center;
 }
+h1{
+    line-height: 80px;
+    font-size: 2rem;
+    color: var(--text-color);
+}
+br{
+    clear: both;
+}
+/* khung 2 */
+.boxmacbook{
+    width: 80%;
+    min-height: 600px;
+    margin: 0px auto; 
+    margin-top: 200px;      
+}
+.boxmacbook img{
+    width: 100%;
+}
+/* Khung 3 */
+.boxphu {
+    width: 80%;
+    margin: 0px auto;
+    text-align: center;
+    margin-top: 200px;
+}
+.boxphu img{
+    width: 98.8%;
+}
+
+
 /* Khung nhỏ chứa 1 sản phẩm */
 .sp{
-    width: 19%;
+    width: 19.1%;
     line-height: 26px;
     box-shadow: 0px 0px 1px gray;
     float: left;
-    margin: 5px 6px;
+    margin: 5px 0px;
+    margin-left: 11.5px;
+    background-color: white;
 }
 /* chỉnh hiệu ứng khi di chuột vào khung sản phẩm nhỏ */
 .sp:hover{
@@ -152,23 +188,9 @@ span{
     color: var(--text-color);
     transition: all .2s linear;
 }
-/*
-div>a{
-    color: rgb(255, 255, 255);
-    text-decoration: none;
-    font-size: 20px;
-    word-spacing: 1px;
-    list-style: none;
-    text-align: justify;
-}
-div>#tin {
-    text-shadow: 0px 0px 10px red;
-    text-decoration: none;
-    padding: 5px;
-    margin-left: 20px;
-    
-} */
+
 footer{
+    margin-top: 200px;
     border-top: 5px double orangered;
     line-height: 50px;
     background-color: lightcoral;
