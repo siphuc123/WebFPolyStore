@@ -38,9 +38,39 @@ h2{
     width: 70px;
 }
 /* thanh tìm kiếm và vỏ hàng */
-.search{
+div.search{
     float: right;
     line-height: 80px;
+}
+div.search>input {
+    font-size: 18px;
+    border: 2px solid gray;
+    border-radius: 7px 0px 0px 5px;
+    padding-left: 10px;
+    line-height: 20px;  
+    font-weight: bold;
+}
+div.search>a.timkiem{
+    font-size: 24px;
+    position: absolute;
+    top:3px;
+    right:135px;
+}
+.timkiem>i{
+    color: grey;
+}
+.search>a.giohang{
+    border: 1px solid #8f8f8f;
+    border-radius: 4px;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 9px 8px;
+    color: gray;
+}
+.search>a.giohang>b{
+    font-size: 17px;
+    line-height: 15px;
+    margin-left: 10px;
 }
 /* menu */
 .menu>ul{
