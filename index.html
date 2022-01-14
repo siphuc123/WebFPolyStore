@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- ICON -->
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
     <!-- LOGO -->
     <link rel="apple-touch-icon" sizes="57x57" href="/images/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="/images//apple-icon-60x60.png">
@@ -32,125 +34,222 @@
 </head>
 
 <body>
-    <header class="TAB">
-        <img src="/images/android-icon-48x48.png" alt="Error"> 
-        <p class="title"> FPolyStore</p>
-        <div>
-            <a href="#1" id="tin">Trang chủ</a> 
-            <a href="#3" id="tin">Cửa hàng</a> 
-            <a href="#2" id="tin">Liên hệ</a> 
-            <a href="#4" id="tin">About us</a> 
-            <a href="#5" id="tin">FAQ</a>  
-        </div>    
-    </header>
-
-    <p>
-        <img class="head" src="images/headerMau.png" alt="">
-    </p>
-    
-    <nav class="Menu">
-        Đây để làm menu
-    </nav>
-    <div class="box">
-        <div class="h1">
-            <!-- Sản Phẩm -->
-            <div class="sp">
-                <a href=""><img src="images/SP1.png" alt=""></a><br>
-                <a href="">Acer Nitro 5 Gaming AN515 57
-                    727J i7 11800H</a><br>
-                    <p></p>
-                    <p></p>
-                    <span>RAM 8GB</span>
-                    <span>SSD 512 GB</span>
-                    <p>Online giá rẻ <br> <del>29.990.000đ</del></p>
-                    <p>28.790.000đ</p>
-                    <p></p>
-                    <p>
-                        M.HÌNH 15.6", Full HD, 144HZ <br>
-                        CPU i7, 11800H, 2.30 GHz <br>
-                        CARD RTX 3050TI 4GB <br>
-                        PIN 4-cell, 57Wh <br>
-                    </p>
+    <nav>
+        <div class="top">
+            <div class="logo">
+                <img src="/images/android-icon-48x48.png" alt="Error">
+                <h2>PolyStore</h2>
             </div>
-            <!-- Sản Phẩm -->
-            <div class="sp">
-                <a href=""><img src="images/SP1.png" alt=""></a><br>
-                <a href="">Acer Nitro 5 Gaming AN515 57
-                    727J i7 11800H</a><br>
-                    <p></p>
-                    <p></p>
-                    <span>RAM 8GB</span>
-                    <span>SSD 512 GB</span>
-                    <p>Online giá rẻ <br> <del>29.990.000đ</del></p>
-                    <p>28.790.000đ</p>
-                    <p></p>
-                    <p>
-                        M.HÌNH 15.6", Full HD, 144HZ <br>
-                        CPU i7, 11800H, 2.30 GHz <br>
-                        CARD RTX 3050TI 4GB <br>
-                        PIN 4-cell, 57Wh <br>
-                    </p>
-            </div>
-            <!-- Sản Phẩm -->
-            <div class="sp">
-                <a href=""><img src="images/SP1.png" alt=""></a><br>
-                <a href="">Acer Nitro 5 Gaming AN515 57
-                    727J i7 11800H</a><br>
-                    <p></p>
-                    <p></p>
-                    <span>RAM 8GB</span>
-                    <span>SSD 512 GB</span>
-                    <p>Online giá rẻ <br> <del>29.990.000đ</del></p>
-                    <p>28.790.000đ</p>
-                    <p></p>
-                    <p>
-                        M.HÌNH 15.6", Full HD, 144HZ <br>
-                        CPU i7, 11800H, 2.30 GHz <br>
-                        CARD RTX 3050TI 4GB <br>
-                        PIN 4-cell, 57Wh <br>
-                    </p>
-            </div>
-            <!-- Sản Phẩm -->
-            <div class="sp">
-                <a href=""><img src="images/SP1.png" alt=""></a><br>
-                <a href="">Acer Nitro 5 Gaming AN515 57
-                    727J i7 11800H</a><br>
-                    <p></p>
-                    <p></p>
-                    <span>RAM 8GB</span>
-                    <span>SSD 512 GB</span>
-                    <p>Online giá rẻ <br> <del>29.990.000đ</del></p>
-                    <p>28.790.000đ</p>
-                    <p></p>
-                    <p>
-                        M.HÌNH 15.6", Full HD, 144HZ <br>
-                        CPU i7, 11800H, 2.30 GHz <br>
-                        CARD RTX 3050TI 4GB <br>
-                        PIN 4-cell, 57Wh <br>
-                    </p>
-            </div>
-            <!-- Sản Phẩm -->
-            <div class="sp">
-                <a href=""><img src="images/SP1.png" alt=""></a><br>
-                <a href="">Acer Nitro 5 Gaming AN515 57
-                    727J i7 11800H</a><br>
-                    <p></p>
-                    <p></p>
-                    <span>RAM 8GB</span>
-                    <span>SSD 512 GB</span>
-                    <p>Online giá rẻ <br> <del>29.990.000đ</del></p>
-                    <p>28.790.000đ</p>
-                    <p></p>
-                    <p>
-                        M.HÌNH 15.6", Full HD, 144HZ <br>
-                        CPU i7, 11800H, 2.30 GHz <br>
-                        CARD RTX 3050TI 4GB <br>
-                        PIN 4-cell, 57Wh <br>
-                    </p>
+            <div class="search">
+                <input type="text" placeholder="Tìm kiếm sản phẩm">
+                <a href="#"><i class='bx bx-search'></i></a>
+                <a href=""><i class='bx bx-shopping-bag'></i></a>
             </div>
         </div>
-    </div>
+        <div class="menu">
+            <ul>
+                <li><a href="#">Trang chủ</a></li>
+                <li><a href="#">Cửa hàng</a></li>
+                <li><a href="#">Liên hệ</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">FAQ</a></li>
+            </ul>
+        </div>
+    </nav>
+    <header>
+        <img class="head" src="images/headerMau.png" alt="">
+    </header>
 
+    <nav class="danhmuc">
+        <div>
+
+        </div>
+    </nav>
+    <article>
+        <div class="box">
+            <!-- Sản Phẩm -->
+            <div class="sp">
+                <a href="#"><img src="images/SP1.png" alt=""></a><br>
+                <a href="#">Acer Nitro 5 Gaming AN515 57
+                    727J i7 11800H</a><br>
+                <p></p>
+                <p></p>
+                <span>RAM 8GB</span>
+                <span>SSD 512 GB</span>
+                <p>Online giá rẻ <br> <del>29.990.000đ</del></p>
+                <p>28.790.000đ</p>
+                <p></p>
+                <p>
+                    M.HÌNH 15.6", Full HD, 144HZ <br>
+                    CPU i7, 11800H, 2.30 GHz <br>
+                    CARD RTX 3050TI 4GB <br>
+                    PIN 4-cell, 57Wh <br>
+                </p>
+            </div>
+            <div class="sp">
+                <a href="#"><img src="images/SP1.png" alt=""></a><br>
+                <a href="#">Acer Nitro 5 Gaming AN515 57
+                    727J i7 11800H</a><br>
+                <p></p>
+                <p></p>
+                <span>RAM 8GB</span>
+                <span>SSD 512 GB</span>
+                <p>Online giá rẻ <br> <del>29.990.000đ</del></p>
+                <p>28.790.000đ</p>
+                <p></p>
+                <p>
+                    M.HÌNH 15.6", Full HD, 144HZ <br>
+                    CPU i7, 11800H, 2.30 GHz <br>
+                    CARD RTX 3050TI 4GB <br>
+                    PIN 4-cell, 57Wh <br>
+                </p>
+            </div>
+            <div class="sp">
+                <a href="#"><img src="images/SP1.png" alt=""></a><br>
+                <a href="#">Acer Nitro 5 Gaming AN515 57
+                    727J i7 11800H</a><br>
+                <p></p>
+                <p></p>
+                <span>RAM 8GB</span>
+                <span>SSD 512 GB</span>
+                <p>Online giá rẻ <br> <del>29.990.000đ</del></p>
+                <p>28.790.000đ</p>
+                <p></p>
+                <p>
+                    M.HÌNH 15.6", Full HD, 144HZ <br>
+                    CPU i7, 11800H, 2.30 GHz <br>
+                    CARD RTX 3050TI 4GB <br>
+                    PIN 4-cell, 57Wh <br>
+                </p>
+            </div>
+            <div class="sp">
+                <a href="#"><img src="images/SP1.png" alt=""></a><br>
+                <a href="#">Acer Nitro 5 Gaming AN515 57
+                    727J i7 11800H</a><br>
+                <p></p>
+                <p></p>
+                <span>RAM 8GB</span>
+                <span>SSD 512 GB</span>
+                <p>Online giá rẻ <br> <del>29.990.000đ</del></p>
+                <p>28.790.000đ</p>
+                <p></p>
+                <p>
+                    M.HÌNH 15.6", Full HD, 144HZ <br>
+                    CPU i7, 11800H, 2.30 GHz <br>
+                    CARD RTX 3050TI 4GB <br>
+                    PIN 4-cell, 57Wh <br>
+                </p>
+            </div>
+            <div class="sp">
+                <a href="#"><img src="images/SP1.png" alt=""></a><br>
+                <a href="#">Acer Nitro 5 Gaming AN515 57
+                    727J i7 11800H</a><br>
+                <p></p>
+                <p></p>
+                <span>RAM 8GB</span>
+                <span>SSD 512 GB</span>
+                <p>Online giá rẻ <br> <del>29.990.000đ</del></p>
+                <p>28.790.000đ</p>
+                <p></p>
+                <p>
+                    M.HÌNH 15.6", Full HD, 144HZ <br>
+                    CPU i7, 11800H, 2.30 GHz <br>
+                    CARD RTX 3050TI 4GB <br>
+                    PIN 4-cell, 57Wh <br>
+                </p>
+            </div>
+            <div class="sp">
+                <a href="#"><img src="images/SP1.png" alt=""></a><br>
+                <a href="#">Acer Nitro 5 Gaming AN515 57
+                    727J i7 11800H</a><br>
+                <p></p>
+                <p></p>
+                <span>RAM 8GB</span>
+                <span>SSD 512 GB</span>
+                <p>Online giá rẻ <br> <del>29.990.000đ</del></p>
+                <p>28.790.000đ</p>
+                <p></p>
+                <p>
+                    M.HÌNH 15.6", Full HD, 144HZ <br>
+                    CPU i7, 11800H, 2.30 GHz <br>
+                    CARD RTX 3050TI 4GB <br>
+                    PIN 4-cell, 57Wh <br>
+                </p>
+            </div>
+            <div class="sp">
+                <a href="#"><img src="images/SP1.png" alt=""></a><br>
+                <a href="#">Acer Nitro 5 Gaming AN515 57
+                    727J i7 11800H</a><br>
+                <p></p>
+                <p></p>
+                <span>RAM 8GB</span>
+                <span>SSD 512 GB</span>
+                <p>Online giá rẻ <br> <del>29.990.000đ</del></p>
+                <p>28.790.000đ</p>
+                <p></p>
+                <p>
+                    M.HÌNH 15.6", Full HD, 144HZ <br>
+                    CPU i7, 11800H, 2.30 GHz <br>
+                    CARD RTX 3050TI 4GB <br>
+                    PIN 4-cell, 57Wh <br>
+                </p>
+            </div>
+            <div class="sp">
+                <a href="#"><img src="images/SP1.png" alt=""></a><br>
+                <a href="#">Acer Nitro 5 Gaming AN515 57
+                    727J i7 11800H</a><br>
+                <p></p>
+                <p></p>
+                <span>RAM 8GB</span>
+                <span>SSD 512 GB</span>
+                <p>Online giá rẻ <br> <del>29.990.000đ</del></p>
+                <p>28.790.000đ</p>
+                <p></p>
+                <p>
+                    M.HÌNH 15.6", Full HD, 144HZ <br>
+                    CPU i7, 11800H, 2.30 GHz <br>
+                    CARD RTX 3050TI 4GB <br>
+                    PIN 4-cell, 57Wh <br>
+                </p>
+            </div>
+            <div class="sp">
+                <a href="#"><img src="images/SP1.png" alt=""></a><br>
+                <a href="#">Acer Nitro 5 Gaming AN515 57
+                    727J i7 11800H</a><br>
+                <p></p>
+                <p></p>
+                <span>RAM 8GB</span>
+                <span>SSD 512 GB</span>
+                <p>Online giá rẻ <br> <del>29.990.000đ</del></p>
+                <p>28.790.000đ</p>
+                <p></p>
+                <p>
+                    M.HÌNH 15.6", Full HD, 144HZ <br>
+                    CPU i7, 11800H, 2.30 GHz <br>
+                    CARD RTX 3050TI 4GB <br>
+                    PIN 4-cell, 57Wh <br>
+                </p>
+            </div>
+            <div class="sp">
+                <a href="#"><img src="images/SP1.png" alt=""></a><br>
+                <a href="#">Acer Nitro 5 Gaming AN515 57
+                    727J i7 11800H</a><br>
+                <p></p>
+                <p></p>
+                <span>RAM 8GB</span>
+                <span>SSD 512 GB</span>
+                <p>Online giá rẻ <br> <del>29.990.000đ</del></p>
+                <p>28.790.000đ</p>
+                <p></p>
+                <p>
+                    M.HÌNH 15.6", Full HD, 144HZ <br>
+                    CPU i7, 11800H, 2.30 GHz <br>
+                    CARD RTX 3050TI 4GB <br>
+                    PIN 4-cell, 57Wh <br>
+                </p>
+            </div>
+        </div>
+    </article>
     <footer>
         FPoly Store © 2022. All rights reserved
         <div>
@@ -158,6 +257,4 @@
         </div>
     </footer>
 </body>
-
-
 </html>

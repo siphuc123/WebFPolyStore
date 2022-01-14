@@ -1,10 +1,82 @@
-body {
-    background: #1E3163;
+/* reset css */
+*{
+    margin: 0px;
+    border: 0px;
+    box-sizing: border-box;
 }
+/* import font */
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400;500;600;700&display=swap');
+/*cài font và size cho cả bài */
 html{
-    font-size: 96%;
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 100%;
 }
-
+/* (Lớp giả) đỗi màu chung*/
+:root{
+    --text-color:brown;
+}
+/* Khung chung gồm logo và tìm kiếm vỏ hàng */
+.top{
+    position: relative;
+    padding: 0px;
+    width: 100%;
+    float: right;
+}
+/* chữ gần logo */
+h2{
+    font-size: 2rem;
+    position: absolute;
+    top: 14px;
+    left: 90px;
+    color: var(--text-color);
+}
+/* logo */
+.logo img{
+    position: absolute;
+    top: 0px;
+    left: 35px;
+    width: 70px;
+}
+/* thanh tìm kiếm và vỏ hàng */
+.search{
+    float: right;
+    line-height: 80px;
+}
+/* menu */
+.menu>ul{
+    line-height: 50px;
+    margin:0px 0px;
+    padding:0px;
+    border-radius:5px;
+    list-style:none;
+    height:40px;
+}
+.menu>ul>li>a{
+    line-height:40px;
+    font-size: 1.5rem;
+    text-decoration: none;
+    padding-left: 50px;
+    color: black;
+}
+.menu>ul>li{
+    float:left;
+    margin:0 5px;
+}
+/* ảnh header  */
+header img{
+    width: 100%;
+    margin: 20px auto;
+}
+/*hãng(Nhà sản xuất) */
+.danhmuc{
+    width: 80%;
+    margin: 0px auto;
+    height: 50px;
+    border: 1px solid var(--text-color);
+    z-index: 1;
+    margin: 20px auto;
+}
+/* Khung to chứa nhiều sản phẩm */
 .box {
     width: 80%;
     margin: 0px auto;
@@ -13,37 +85,40 @@ html{
     margin-bottom: 20px;
     text-align: center;
 }
-.h1>.sp {
+/* Khung nhỏ chứa 1 sản phẩm */
+.sp{
+    width: 19%;
+    line-height: 26px;
+    box-shadow: 0px 0px 1px gray;
     float: left;
-    margin-left: 8px;
+    margin: 5px 6px;
 }
-.box>.sp{
-    float: left;
+/* chỉnh hiệu ứng khi di chuột vào khung sản phẩm nhỏ */
+.sp:hover{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    transition: all .3s linear;
 }
+/* ảnh của 1 sản phẩm */
 .sp img{
-    max-width: 400px;
     width: 100%;
-    height: auto;
 }
-.sp>a { 
-    color: black;
-}
+/* Khung của 8gb va ssd */
 span{
     border: 1px solid black;
 }
-.sp{
-    width: 15rem;
-    height: auto;
-    background-color: white;
+/* Tên sản phẩm  */
+.sp a{
+    color: black;
+    font-size: 1.3rem;
+    font-family: Arial;
+    text-decoration: none;
 }
-
-hr {
-    clear: both;
+/* hiệu ứng khi di chuột vào tên  */
+.sp a:hover{
+    color: var(--text-color);
+    transition: all .2s linear;
 }
-header>img {
-    float: left;
-    margin-bottom: 10px;
-}
+/*
 div>a{
     color: rgb(255, 255, 255);
     text-decoration: none;
@@ -52,40 +127,13 @@ div>a{
     list-style: none;
     text-align: justify;
 }
-/* Menu ( nav) */
-.Menu{
-    background-color: orangered;
-    text-align: center;
-    border: 3px solid #000000;
-    padding: 5px;
-    display: block;
-    box-shadow: inset 0 0 20px yellow;
-    font-size: 20px;
-    width: 99%;
-}
-
 div>#tin {
     text-shadow: 0px 0px 10px red;
     text-decoration: none;
     padding: 5px;
     margin-left: 20px;
     
-}
-
-.title {
-    position:absolute;
-    top: 2px;
-    left: 61px;
-    font-size: 20px;
-    font-weight: bold;
-    color: orangered;
-}
-/* chinh header */
-p>.head {
-    width: 100%;
-    height: auto;
-}
-/* chinh footer */
+} */
 footer{
     border-top: 5px double orangered;
     line-height: 50px;
