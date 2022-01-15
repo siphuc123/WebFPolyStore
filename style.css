@@ -1,135 +1,244 @@
+/* reset css */
+*{
+    margin: 0px;
+    border: 0px;
+    box-sizing: border-box;
+}
+/* import font */
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400;500;600;700&display=swap');
+/*cài font và size cho cả bài */
 html{
-    font-size: 96%;
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 100%;
 }
-.menu1{
-    /* background-color: orangered;
-    text-align: center;
-    border: 3px solid #000000;
+/* (Lớp giả) đỗi màu chung*/
+:root{
+    --text-color:rgb(190, 34, 34);
+}
+/* Khung chung gồm logo và tìm kiếm vỏ hàng */
+.top{
+    position: relative;
     padding: 5px;
-    display: block;
-    box-shadow: inset 0 0 20px yellow;
-    font-size: 20px;
-    width: 99%; */
-    background-color: #000000;
-    margin-bottom: 20px;
-}
-header{
-    /* padding: 20px; */
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
-.father{
-    width: 80%;
-    margin: 0px auto;
-    background-color: #548CFF;
-}
-.brother{
-    /* border: 1px solid red; */
-    width: 70%;
-    min-height: 100px;
-    float: left;
-    background-color: cadetblue;
-    margin-bottom: 20px;
-}
-.sister{
-    width: 25%;
-    min-height: 100px;
+    width: 100%;
     float: right;
-    background-color: cadetblue;
-    margin-bottom: 20px;
 }
-
-.menu2{
-    clear: right;
-    margin-top: 20px;
-
+/* chữ gần logo */
+h2{
+    font-size: 2rem;
+    position: absolute;
+    top: 14px;
+    left: 90px;
+    color: var(--text-color);
+}
+/* logo */
+.logo img{
+    position: absolute;
+    top: 0px;
+    left: 35px;
+    width: 70px;
+}
+/* thanh tìm kiếm và vỏ hàng */
+div.search{
+    float: right;
+    line-height: 80px;
+}
+/* chổ nhập dữ liệu */
+div.search>input {
+    font-size: 19px;
+    border: 2px solid gray;
+    border-radius: 7px 7px 7px 7px;
+    padding-left: 10px;
+    line-height: 20px;  
+    font-weight: bold;
+    height: 40px;
+}
+/* thanh tìm kiếm */
+div.search>a.timkiem{
+    font-size: 24px;
+    position: absolute;
+    top:9px;
+    right:75px;
+}
+/* chỉnh icon  */
+.timkiem>i{
+    color: grey;
+}
+/* chỉnh giỏ hàng */
+.search>a.giohang{
+    border-radius: 7px;
+    border: 2px solid gray ;
+    margin-left: 5px;
+    padding: 1.5px 10px 5px 10px; 
+    color: gray;
+    text-shadow: 1px 1px 1px grey;
+    word-spacing: -3px;
+    font-size: 25px;
+}
+ /* menu ở giữa đẹp */
+.menu>ul>li>a {
+    display: inline-block;
+    transition: all .5s ease;
+    color: #001F3F;
+    padding: 4px 0px;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 1;
+    font-size: 15px;
+    background-color:  transparent;
+    border-radius: 4px;
+    transform: translateX(-30%);
+    position: relative;
+    text-decoration: none;
+}
+/* hiệu ứng cho mấy cái chữ bên trong */
+.menu>ul>li:hover>a {
+    padding: 0px;
+    cursor: pointer;
+    color: orangered;
+    box-shadow: 0 10px 20px -8px rgba(0, 0, 0,.7);
+}
+/* menu */
+.menu>ul{
+    list-style-type: none;
+    position: absolute;
+    top: -45px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: inline-block; 
+    border: 2px solid gray;
+    border-radius: 30px;
+}
+div.menu {
+    position: relative;
+    display: flex;
+    margin: 0px auto;
+    padding: 0px 30px;
+}
+.menu>ul>li{
+    float:left;
+    margin: 0px 5px;
+    border: 2px solid transparent; 
+    padding: 12px;
+}
+/* ảnh header  */
+header img{
     width: 100%;
-    min-height: 50px;
-    background-color: black;
+    margin: 20px auto;
+    margin-top: 35px;
 }
-article{
-    background-color: aqua;
-}
-/* khung lớn sản phẩm */
-.box {
+/*hãng(Nhà sản xuất) */
+.danhmuc{
     width: 80%;
     margin: 0px auto;
-    height: 2000px;
-    margin-bottom: 20px;
+    height: 70px;
+    z-index: 1;
+    line-height: 93px;
     text-align: center;
-    background-color: aqua;
-}
-/* Khung sản phẩm */
-.h1>.sp {
-    float: left;
-    margin-left: 8px;
-}
-/* anh sản phẩm */
-.sp img{
-    max-width: 400px;
-    width: 100%;
-    height: auto;
-}
-/* Tên sản phẩm */
-.sp>a { 
-    color: black;
-    font-family: Arial;
-    font-size: 1rem;
-}
-.sp>a:hover{
-    color: #548CFF;
-}
+    border-radius: 50px;
+    background-color:black;
+    margin-top: 5px;
 
+}
+/* ảnh trong danh mục  */
+.danhmuc a img{
+    border-radius:  30px;
+    margin: 0px 7px;
+    width: 130px;
+}
+.danhmuc a img:hover{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    transform: translateY(-5px) ;
+    transition: 250ms;
+    cursor: pointer;
+}
+/* khung 1 */
+.boxnoibat{
+    width: 80%;
+    min-height: 550px;
+    margin: 0px auto;
+    background-color: yellow;
+    margin-top: 30px;
+    text-align: center;
+}
+/* thẻ tiêu đề trong khung nỗi bật */
+h1{
+    line-height: 80px;
+    font-size: 2rem;
+    color: var(--text-color);
+}
+/* Chia vùng */
+br{
+    clear: both;
+}
+/* khung 2 */
+.boxmacbook{
+    width: 80%;
+    min-height: 600px;
+    margin: 0px auto; 
+    margin-top: 100px;  
+    text-align: center;   
+}
+/* ảnh trong khung macbook */
+.boxmacbook img{
+    width: 99%;
+}
+/* Khung 3 */
+.boxphu {
+    width: 80%;
+    margin: 0px auto;
+    text-align: center;
+    margin-top: 100px;
+}
+/* ảnh trong box phụ */
+.boxphu img{
+    width: 99%;
+}
+/* Khung nhỏ chứa 1 sản phẩm */
+.sp{
+    width: 19%;
+    line-height: 26px;
+    box-shadow: 0px 0px 1px black;
+    float: left;
+    margin: 5px 0px;
+    margin-left: 10.3px;
+    background-color: white;
+}
+/* chỉnh hiệu ứng khi di chuột vào khung sản phẩm nhỏ */
+.sp:hover{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    transform: translateY(-5px) ;
+    transition: 250ms;
+    cursor: pointer;
+}
+/* ảnh của 1 sản phẩm */
+.sp img{
+    width: 100%;
+}
+/* Khung của 8gb va ssd */
 span{
     border: 1px solid black;
 }
-.sp{
-    width: 15rem;
-    height: auto;
-    background-color: white;
-}
-
-hr {
-    clear: both;
-}
-header>img {
-    float: left;
-    margin-bottom: 10px;
-}
-div>a{
-    color: rgb(255, 255, 255);
+/* Tên sản phẩm  */
+.sp a{
+    color: black;
+    font-size: 1.2rem;
+    font-family: Arial;
     text-decoration: none;
-    font-size: 20px;
-    word-spacing: 1px;
-    list-style: none;
-    text-align: justify;
 }
-/* Menu ( nav) */
-
-
-div>#tin {
-    color: #000000;
-    text-decoration: none;
-    padding: 5px;
-    margin-left: 20px;
-    
+/* hiển thị số tiên bị gạch */
+del{
+    color: gray;
+    font-size: 0.9rem;
 }
-
-.title {
-    position:absolute;
-    top: 2px;
-    left: 61px;
-    font-size: 20px;
-    font-weight: bold;
-    color: orangered;
+/* hiệu ứng khi di chuột vào tên  */
+.sp a:hover{
+    color: var(--text-color);
+    cursor: pointer;
+    transition: all .2s linear;
 }
-/* chinh header */
-p>.head {
-    width: 100%;
-    height: auto;
-}
-/* chinh footer */
+/* điều chỉnh footer */
 footer{
+    margin-top: 200px;
     border-top: 5px double orangered;
     line-height: 50px;
     background-color: lightcoral;
