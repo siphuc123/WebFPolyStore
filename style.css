@@ -1,3 +1,26 @@
+ /* menu ở giữa đẹp */
+.menu>ul>li>a {
+    display: inline-block;
+    transition: all .5s ease;
+    color: #001F3F;
+    padding: 4px 0px;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 1;
+    font-size: 15px;
+    background-color:  transparent;
+    border-radius: 4px;
+    transform: translateX(-30%);
+    position: relative;
+    text-decoration: none;
+}
+/* hiệu ứng cho mấy cái chữ bên trong */
+.menu>ul>li:hover>a {
+    padding: 0px;
+    color: orangered;
+    box-shadow: 0 10px 20px -8px rgba(0, 0, 0,.7);
+}
+
 /* reset css */
 *{
     margin: 0px;
@@ -42,7 +65,6 @@ div.search{
     float: right;
     line-height: 80px;
 }
-/* chổ nhập dữ liệu */
 div.search>input {
     font-size: 19px;
     border: 2px solid gray;
@@ -52,18 +74,15 @@ div.search>input {
     font-weight: bold;
     height: 40px;
 }
-/* thanh tìm kiếm */
 div.search>a.timkiem{
     font-size: 24px;
     position: absolute;
     top:7px;
     right:139px;
 }
-/* chỉnh icon  */
 .timkiem>i{
-    color: orangered;
+    color: black;
 }
-/* chỉnh giỏ hàng */
 .search>a.giohang{
     border: 1px solid #8f8f8f;
     border-radius: 4px;
@@ -71,37 +90,14 @@ div.search>a.timkiem{
     margin-right: 5px;
     padding: 10px;
     color: gray;
-    text-shadow: 0px 0px 2px orangered;
+    text-shadow: 2px 2px 2px grey;
     word-spacing: -3px;
     font-size: 18px;
 }
-/* chữ gần giõ hàng */
 .search>a.giohang>b{
     font-size: 17px;
     line-height: 15px;
     margin-left: 10px;
-}
- /* menu ở giữa đẹp */
-.menu>ul>li>a {
-    display: inline-block;
-    transition: all .5s ease;
-    color: #001F3F;
-    padding: 4px 0px;
-    text-transform: uppercase;
-    text-align: center;
-    line-height: 1;
-    font-size: 15px;
-    background-color:  transparent;
-    border-radius: 4px;
-    transform: translateX(-30%);
-    position: relative;
-    text-decoration: none;
-}
-/* hiệu ứng cho mấy cái chữ bên trong */
-.menu>ul>li:hover>a {
-    padding: 0px;
-    color: orangered;
-    box-shadow: 0 10px 20px -8px rgba(0, 0, 0,.7);
 }
 /* menu */
 .menu>ul{
@@ -136,39 +132,32 @@ header img{
     width: 80%;
     margin: 0px auto;
     height: 70px;
+    border: 1px solid var(--text-color);
     z-index: 1;
-    line-height: 93px;
+    line-height: 98px;
     text-align: center;
-    border-radius: 50px;
+    border-radius: 30px;
     background-color: black
 }
-/* ảnh trong danh mục  */
+
 .danhmuc a img{
     border-radius:  30px;
-    margin: 0px 6px;
-    width: 130px;
-}
-.danhmuc a img:hover{
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    transform: translateY(-5px) ;
-    transition: 250ms;
+    margin: 0px 10px;
 }
 /* khung 1 */
 .boxnoibat{
     width: 80%;
-    min-height: 1013px;
+    min-height: 1115px;
     margin: 0px auto;
     background-color: yellow;
     margin-top: 50px;
     text-align: center;
 }
-/* thẻ tiêu đề trong khung nỗi bật */
 h1{
     line-height: 80px;
     font-size: 2rem;
     color: var(--text-color);
 }
-/* Chia vùng */
 br{
     clear: both;
 }
@@ -177,33 +166,31 @@ br{
     width: 80%;
     min-height: 600px;
     margin: 0px auto; 
-    margin-top: 150px;  
-    text-align: center;   
+    margin-top: 200px;      
 }
-/* ảnh trong khung macbook */
 .boxmacbook img{
-    width: 99%;
+    width: 100%;
 }
 /* Khung 3 */
 .boxphu {
     width: 80%;
     margin: 0px auto;
     text-align: center;
-    margin-top: 150px;
+    margin-top: 200px;
 }
-/* ảnh trong box phụ */
 .boxphu img{
-    width: 99%;
+    width: 98.8%;
 }
+
 
 /* Khung nhỏ chứa 1 sản phẩm */
 .sp{
     width: 19%;
     line-height: 26px;
-    box-shadow: 0px 0px 1px black;
+    box-shadow: 0px 0px 5px red;
     float: left;
     margin: 5px 0px;
-    margin-left: 10.3px;
+    margin-left: 11.5px;
     background-color: white;
 }
 /* chỉnh hiệu ứng khi di chuột vào khung sản phẩm nhỏ */
@@ -227,7 +214,6 @@ span{
     font-family: Arial;
     text-decoration: none;
 }
-/* hiển thị số tiên bị gạch */
 del{
     color: gray;
     font-size: 0.9rem;
@@ -237,7 +223,7 @@ del{
     color: var(--text-color);
     transition: all .2s linear;
 }
-/* điều chỉnh footer */
+
 footer{
     margin-top: 200px;
     border-top: 5px double orangered;
