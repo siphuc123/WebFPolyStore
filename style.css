@@ -77,9 +77,12 @@ div.search>a.timkiem{
      opacity: 0.7;
      display: inline-flex;
 }
+/* hiệu ứng cho vỏ hàng */
 .search>a.giohang:hover{
      opacity: 1;
+     color: var(--text-color);
 }
+
   /* menu ở giữa đẹp */
 .menu>ul>li>a {
      display: inline-block;
@@ -89,7 +92,8 @@ div.search>a.timkiem{
      text-transform: uppercase;
      text-align: center;
      line-height: 1;
-     font-size: 15px;
+     font-size: 15pt;
+     font-weight: bold;
      background-color:  transparent;
      border-radius: 4px;
      transform: translateX(-30%);
@@ -100,7 +104,7 @@ div.search>a.timkiem{
 .menu>ul>li:hover>a {
      padding: 0px;
      cursor: pointer;
-     color: orangered;
+     color: var(--text-color);
      box-shadow: 0 10px 20px -8px rgba(0, 0, 0,.7);
 }
  /* menu */
@@ -111,7 +115,7 @@ div.search>a.timkiem{
      left: 50%;
      transform: translateX(-50%);
      display: inline-block; 
-     border: 2px solid gray;
+     /* border: 2px solid gray; */
      border-radius: 30px;
 }
 div.menu {
@@ -126,11 +130,38 @@ div.menu {
      border: 2px solid transparent; 
      padding: 12px;
 }
+header{
+     width: 90%;
+     margin: 0px auto;
+     margin-top: 100px;
+}
  /* ảnh header  */
-header img{
-     width: 100%;
-     margin: 20px auto;
-     margin-top: 35px;
+header .htop .hinh1{
+     width: auto;
+     height: 311px;
+}
+header .htop .hinh2{
+     float: right;
+     width: auto;
+     height: 311px;
+}
+.hbot{
+     clear: both; 
+     text-align: center;
+}
+.hbot img{
+     width: 24%;
+     box-shadow: 0px 0px 2px black;
+     margin-top: 12px;
+}
+.hbot .hbot2, .hbot3{
+     margin:0px 7px;
+}
+.hbot img:first-child{
+     float: left;
+}
+.hbot img:last-child{
+     float: right;
 }
  /*hãng(Nhà sản xuất) */
 .danhmuc{
@@ -198,6 +229,22 @@ br{
 .boxphu img{
      width: 99%;
 }
+.boxghichu{
+     width: 80%;
+     margin: 0px auto;
+     text-align: center;
+}
+.boxghichu .ghichu{
+     width: 33%;
+     min-height:9px;
+     line-height: 25px;
+     padding: 100px 25px;
+     display: inline-block;
+}
+.boxghichu .ghichu .icon{
+     font-size: 40pt;
+     color: gray;
+}
  /* Khung nhỏ chứa 1 sản phẩm */
 .sp{
      width: 19%;
@@ -243,7 +290,6 @@ del{
 }
  /* điều chỉnh footer */
 footer{
-     margin-top: 200px;
      border-top: 5px double orangered;
      line-height: 50px;
      background-color: lightcoral;
