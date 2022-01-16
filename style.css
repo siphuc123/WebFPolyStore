@@ -22,26 +22,26 @@ html{
      padding: 5px;
      width: 100%;
      float: right;
+     border-bottom: 2px solid black;
 }
  /* chữ gần logo */
 h2{
-     font-size: 2.5rem;
+     font-size: 2rem;
      position: absolute;
-     top: 30px;
-     left: 76px;
+     top: 23px;
+     left: 105px;
      color: var(--text-color);
      letter-spacing: 2px;
 }
  /* logo */
 .logo img{
      position: absolute;
-     top: 4px;
-     left: 4px;
+     width: 100px;
 }
  /* thanh tìm kiếm và vỏ hàng */
 div.search{
      float: right;
-     line-height: 80px;
+     line-height: 70px;
 }
  /* chổ nhập dữ liệu */
 div.search>input {
@@ -138,12 +138,12 @@ header{
  /* ảnh header  */
 header .htop .hinh1{
      width: auto;
-     height: 311px;
+     height: 310px;
 }
 header .htop .hinh2{
      float: right;
      width: auto;
-     height: 311px;
+     height: 310px;
 }
 .hbot{
      clear: both; 
