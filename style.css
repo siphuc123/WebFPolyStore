@@ -22,7 +22,6 @@ html{
      padding: 5px;
      width: 100%;
      float: right;
-     border-bottom: 2px solid black;
 }
  /* chữ gần logo */
 h2{
@@ -36,7 +35,7 @@ h2{
  /* logo */
 .logo img{
      position: absolute;
-     width: 100px;
+     left: 50px;
 }
  /* thanh tìm kiếm và vỏ hàng */
 div.search{
@@ -71,7 +70,7 @@ div.search>a.timkiem{
      border: 2px solid gray ;
      margin-right: 30px;
      padding: 2px 10px 9px 10px; 
-     color: gray;
+     color:black;
      text-shadow: 1px 1px 1px grey;
      font-size: 25px;
      opacity: 0.7;
@@ -83,6 +82,32 @@ div.search>a.timkiem{
      color: var(--text-color);
 }
 
+
+ /* menu */
+div.menu {
+     position: relative;
+     display: flex;
+     margin: 0px auto;
+     padding: 0px 30px;
+}
+/* tag ul trong menu */
+.menu>ul{
+     list-style-type: none;
+     position: absolute;
+     top: -65px;
+     left: 50%;
+     transform: translateX(-50%);
+     display: inline-block; 
+     /* border: 2px solid gray; */
+     border-radius: 30px;
+}
+/* tag li trong menu */
+.menu>ul>li{
+     float:left;
+     margin: 0px 5px;
+     border: 2px solid transparent; 
+     padding: 12px;
+}
   /* menu ở giữa đẹp */
 .menu>ul>li>a {
      display: inline-block;
@@ -107,61 +132,8 @@ div.search>a.timkiem{
      color: var(--text-color);
      box-shadow: 0 10px 20px -8px rgba(0, 0, 0,.7);
 }
- /* menu */
-.menu>ul{
-     list-style-type: none;
-     position: absolute;
-     top: -45px;
-     left: 50%;
-     transform: translateX(-50%);
-     display: inline-block; 
-     /* border: 2px solid gray; */
-     border-radius: 30px;
-}
-div.menu {
-     position: relative;
-     display: flex;
-     margin: 0px auto;
-     padding: 0px 30px;
-}
-.menu>ul>li{
-     float:left;
-     margin: 0px 5px;
-     border: 2px solid transparent; 
-     padding: 12px;
-}
 header{
-     width: 90%;
-     margin: 0px auto;
-     margin-top: 100px;
-}
- /* ảnh header  */
-header .htop .hinh1{
-     width: auto;
-     height: 310px;
-}
-header .htop .hinh2{
-     float: right;
-     width: auto;
-     height: 310px;
-}
-.hbot{
-     clear: both; 
-     text-align: center;
-}
-.hbot img{
-     width: 24%;
-     box-shadow: 0px 0px 2px black;
-     margin-top: 12px;
-}
-.hbot .hbot2, .hbot3{
-     margin:0px 7px;
-}
-.hbot img:first-child{
-     float: left;
-}
-.hbot img:last-child{
-     float: right;
+     width: 100%;
 }
  /*hãng(Nhà sản xuất) */
 .danhmuc{
@@ -189,8 +161,8 @@ header .htop .hinh2{
 }
  /* khung 1 */
 .boxnoibat{
-     width: 80%;
-     min-height: 550px;
+     width: 90%;
+     min-height: 595px;
      margin: 0px auto;
      background-color: yellow;
      margin-top: 30px;
@@ -208,7 +180,7 @@ br{
 }
  /* khung 2 */
 .boxmacbook{
-     width: 80%;
+     width: 90%;
      min-height: 600px;
      margin: 0px auto; 
      margin-top: 100px;  
@@ -218,9 +190,12 @@ br{
 .boxmacbook img{
      width: 99%;
 }
+.boxmacbook>.sp>a>img{
+     min-height: 218px;
+}
  /* Khung 3 */
 .boxphu {
-     width: 80%;
+     width: 90%;
      margin: 0px auto;
      text-align: center;
      margin-top: 100px;
@@ -228,6 +203,31 @@ br{
  /* ảnh trong box phụ */
 .boxphu img{
      width: 99%;
+}
+.spp{
+     width: 19%;
+     line-height: 26px;
+     min-height: 400px;
+     box-shadow: 0px 0px 1px black;
+     float: left;
+     margin: 5px 0px;
+     margin-left: 11.5px;
+     background-color: white;
+}
+.spp:hover{
+     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+     transform: translateY(-5px) ;
+     transition: 250ms;
+     cursor: pointer;
+}
+.spp a{
+     color: black;
+     font-size: 1.2rem;
+     font-family: Arial;
+     text-decoration: none;
+}
+.spp a img{
+     min-height: 295px;
 }
 .boxghichu{
      width: 80%;
@@ -249,10 +249,11 @@ br{
 .sp{
      width: 19%;
      line-height: 26px;
+     min-height: 500px;
      box-shadow: 0px 0px 1px black;
      float: left;
      margin: 5px 0px;
-     margin-left: 10.3px;
+     margin-left: 11.5px;
      background-color: white;
 }
  /* chỉnh hiệu ứng khi di chuột vào khung sản phẩm nhỏ */
