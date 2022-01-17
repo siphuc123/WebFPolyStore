@@ -14,7 +14,7 @@ html{
 }
 /* (Lớp giả) đỗi màu chung*/
 :root{
-     --text-color:rgb(190, 34, 34);
+     --text-color:rgb(207, 30, 30);
 }
  /* Khung chung gồm logo và tìm kiếm vỏ hàng */
 .top{
@@ -24,18 +24,20 @@ html{
      float: right;
 }
  /* chữ gần logo */
-h2{
+/* h2{
      font-size: 2rem;
      position: absolute;
      top: 23px;
      left: 105px;
      color: var(--text-color);
      letter-spacing: 2px;
-}
+} */
  /* logo */
 .logo img{
+     width: 170px;
      position: absolute;
-     left: 50px;
+     left: 60px;
+     top: -15px;
 }
  /* thanh tìm kiếm và vỏ hàng */
 div.search{
@@ -55,14 +57,17 @@ div.search>input {
 }
  /* thanh tìm kiếm */
 div.search>a.timkiem{
-     font-size: 25.5px;
+     font-size: 28px;
      position: absolute;
-     top:8px;
-     right: 215px;
+     top:9px;
+     right: 210px;
 }
  /* màu chữ trong thanh tìm kiếm */
 .timkiem>i{
      color: grey;
+}
+.timkiem>i:hover{
+     color: var(--text-color);
 }
  /* chỉnh giỏ hàng */
 .search>a.giohang{
@@ -91,6 +96,7 @@ div.search>a.timkiem{
 /* chỉnh hiệu ứng trái tim */
 .search .tim:hover{
      color: var(--text-color);
+     text-shadow: 0 0 3px red;
 }
 
  /* tag ul trong menu */
@@ -104,11 +110,10 @@ ul{
 ul li{
      margin: 0px 30px;
      list-style: none;
-     line-height: 60px;
+     line-height: 55px;
 }
 ul li a{
-     font-size: 15pt;
-     /* font-weight:bold; */
+     font-size: 14pt;
      text-decoration: none;
      color: white;
 }
@@ -123,6 +128,7 @@ header{
      transform: translateY(-3px) ;
      transition: 250ms;
      cursor: pointer;
+     text-transform: uppercase;
 }
 .menu>ul>li>a:hover{
      color: var(--text-color);
@@ -293,9 +299,10 @@ del{
 }
  /* điều chỉnh footer */
 footer{
-     border-top: 5px double orangered;
-     line-height: 50px;
-     background-color: lightcoral;
+     color: white;
+     border-top: 5px double #ff4500;
+     line-height: 30px;
+     background-color: black;
      text-align: center;
      font-variant: small-caps;
      clear: both;
