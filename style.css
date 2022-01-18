@@ -36,8 +36,8 @@ html{
 .logo img{
      width: 170px;
      position: absolute;
-     left: 60px;
-     top: -15px;
+     left: 70px;
+     top: -13px;
 }
  /* thanh tìm kiếm và vỏ hàng */
 div.search{
@@ -116,6 +116,7 @@ ul li a{
      font-size: 14pt;
      text-decoration: none;
      color: white;
+     letter-spacing: 2px;
 }
 header{
      margin: 0px auto;
@@ -301,7 +302,7 @@ del{
 footer{
      color: white;
      border-top: 5px double #ff4500;
-     line-height: 30px;
+     line-height: 10px;
      background-color: black;
      text-align: center;
      font-variant: small-caps;
@@ -309,13 +310,15 @@ footer{
      font-size: 19px;
      width: 100%;
 }
-
+footer p{
+     margin-top: 15px;
+}
 /* điều chỉnh icon to the top */
 .lenDauTrang {
      position: fixed;
      width: 40px;
      height: 40px;
-     background: orangered;
+     background: var(--text-color);
      bottom: 20px;
      right: 15px;
      text-align: center;
