@@ -24,45 +24,53 @@
 
 <body>
      <a name="TOP"></a>
-     <!-- //////////////////////////////////////////////////////////////// -->
-     <div class="header">
-          <div class="header-logo">
-               <img src="images/logoF.png" alt="Error">
+     <!-- Begin header -->
+     <div class="header-menu">
+          <div class="header">
+               <div class="header-logo">
+                    <img src="images/logoF.png" alt="Error">
+               </div>
+               <div class="header-input">
+                    <input class="input" type="text" placeholder="Tìm kiếm sản phẩm...">
+                    <a href="#" class="search icon"><i class='bx bx-search'></i></a>
+               </div>
+               <div class="header-shop">
+                    <a href="" class="heart icon"><i class='bx bx-heart'></i></a>
+                    <a href="" class="cart icon"><i class='bx bx-cart-alt'></i></a>
+               </div>
           </div>
-          <div class="header-input">
-               <input class="input" type="text" placeholder="Tìm kiếm sản phẩm...">
-               <a href="#" class="search icon"><i class='bx bx-search'></i></a>
+     <!-- End header -->
+          <!-- Begin menu -->
+          <div class="menu">
+               <ul class="nav">
+                    <li><a href=""><i class='bx bxs-home'></i> Trang chủ</a></li>
+                    <li><a href="">
+                              <i class='bx bxs-mouse'></i>
+                              Phụ kiện
+                              <i class='bx bx-caret-down'></i>
+                         </a>
+                         <ul class="subnav">
+                              <li><a href="">Chuột, bàn phím</a></li>
+                              <li><a href="">Thiết bị mạng</a></li>
+                              <li><a href="">Camera, Webcam</a></li>
+                              <li><a href="">Balo, túi chống sóc</a></li>
+                              <li><a href="">Phần mềm</a></li>
+                         </ul>
+                    </li>
+                    <li><a href=""><i class='bx bxs-phone-call'></i> Liên hệ</a></a></li>
+                    <li><a href=""><i class='bx bx-street-view'></i> About us</a></li>
+                    <li><a href=""><i class='bx bxs-chat'></i> Faq</a></li>
+               </ul>
           </div>
-          <div class="header-shop">
-               <a href="" class="heart icon"><i class='bx bx-heart' ></i></a>
-               <a href="" class="cart icon"><i class='bx bx-cart-alt'></i></a>
-          </div>
+          <!-- End menu -->
      </div>
-     <div class="menu">
-          <ul class="nav">
-               <li><a href=""><i class='bx bxs-home'></i> Trang chủ</a></li>
-               <li><a href="">
-                    <i class='bx bxs-mouse' ></i> 
-                    Phụ kiện
-                    <i class='bx bx-caret-down'></i>
-                    </a>
-                    <ul class="subnav">
-                         <li><a href="">Chuột, bàn phím</a></li>
-                         <li><a href="">Thiết bị mạng</a></li>
-                         <li><a href="">Camera, Webcam</a></li>
-                         <li><a href="">Balo, túi chống sóc</a></li>
-                         <li><a href="">Phần mềm</a></li>
-                    </ul>
-               </li>
-               <li><a href=""><i class='bx bxs-phone-call' ></i> Liên hệ</a></a></li>
-               <li><a href=""><i class='bx bx-street-view'></i> About us</a></li>
-               <li><a href=""><i class='bx bxs-chat'></i> Faq</a></li>
-          </ul>
-     </div>
+     <!--  Begin banner -->
      <div class="Banner">
           <img src="images/header2.png" alt="">
      </div>
+     <!--  End banner -->
      <br>
+     <!-- Begin Danhmuc -->
      <nav class="danhmuc">
           <a href=""><img src="images/logomacbook.png" alt=""></a>
           <a href=""><img src="images/logoasus.png" alt=""></a>
@@ -73,7 +81,10 @@
           <a href=""><img src="images/logolg.png" alt=""></a>
           <a href=""><img src="images/logomsi.png" alt=""></a>
      </nav>
-     <article>
+     <!-- End Danhmuc -->
+     <!-- Begin content -->
+     <content>
+          <!-- Begin khung nỗi bật -->
           <div class="boxnoibat">
                <h1><i class='bx bxs-hot'></i> SẢN PHẨM NỔI BẬT <i class='bx bxs-hot'></i></h1>
                <div class="sp">
@@ -152,7 +163,9 @@
                     </p>
                </div>
           </div>
+          <!-- End Khung nỗi bật -->
           <br>
+          <!-- Begin khung macbook -->
           <div class="boxmacbook">
                <img src="/images/bannermacbook.png" alt="">
                <div class="sp">
@@ -231,7 +244,9 @@
                     </p>
                </div>
           </div>
+          <!-- End khung macbook -->
           <br>
+          <!-- Begin khung Phần mềm -->
           <div class="boxphu">
                <img src="/images/bannerphu.png" alt="">
                <div class="spp">
@@ -264,34 +279,40 @@
                          năm 6 user Win/Mac</a><br>
                     <strong>1.490.000đ</strong>
                </div>
-          </div>    
+          </div>
+          <!-- End khung Phần mềm -->
           <br>
+          <!-- Begin khung ghi chú -->
           <div class="boxghichu">
                <div class="ghichu">
-                    
-                    <b class="icon"><i  class='bx bxs-truck'></i></b><br>
+
+                    <b class="icon"><i class='bx bxs-truck'></i></b><br>
                     <strong>Giao hàng miễn phí</strong>
                     <p>Giao hàng miễn phí cho các đơn hàng trên 1.000.000đ</p>
                </div>
                <div class="ghichu">
-                    <b class="icon"><i class='bx bx-money' ></i></b><br>
+                    <b class="icon"><i class='bx bx-money'></i></b><br>
                     <strong>Chính sách hoàn tiền</strong>
                     <p>Hoàn tiền 100% nếu không hài long về chất lượng sản phẩm</p>
                </div>
                <div class="ghichu">
-                    <b class="icon"><i class='bx bxs-gift' ></i></b><br>
+                    <b class="icon"><i class='bx bxs-gift'></i></b><br>
                     <strong>Ưu đãi sản phẩm</strong>
                     <p>Giúp người tiêu dùng sở hữu sản phẩm với giá ưu đãi tốt</p>
                </div>
           </div>
-     </article>
+          <!-- End khung ghi chú -->
+     </content>
+     <!-- End content -->
      <a href="#TOP" class="lenDauTrang"><i class='bx bx-chevron-up'></i></a>
+     <!-- Begin footer -->
      <footer>
           <p>FPoly Store © 2022. All rights reserved</p>
           <div>
                <img src="images/logoF.png" alt="Logo footer" width=170px>
           </div>
      </footer>
+     <!-- End footer -->
 </body>
 
 </html>
