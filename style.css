@@ -16,87 +16,66 @@ html{
 :root{
      --text-color:rgb(207, 30, 30);
 }
+br{
+     clear: both;
+}
  /* Khung chung gồm logo và tìm kiếm vỏ hàng */
-.top{
+.header{
+     width:90%;
+     margin: 0 auto;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+}
+/* logo */
+.header .header-logo{
+     display: inline-block;
+}
+/* ảnh logo */
+.header > .header-logo > img{
+     width: 150px;
+}
+/* khung chứa thanh tìm kiếm và icon kính */
+.header .header-input{
      position: relative;
-     padding: 5px;
-     width: 100%;
-     float: right;
+     margin:0px 100px;
+     display: inline-block;
 }
-
- /* logo */
-.logo img{
-     width: 170px;
-     position: absolute;
-     left: 70px;
-     top: -13px;
-}
- /* thanh tìm kiếm và vỏ hàng */
-div.search{
-     float: right;
-     line-height: 70px;
-}
- /* chổ nhập dữ liệu */
-div.search>input {
-     font-size: 19px;
-     border: 2px solid gray;
-     border-radius: 7px 7px 7px 7px;
+/* thanh tìm kiếm */
+.header .header-input .input{
+     width: 600px;
+     min-height: 50px;
+     color: #000;
+     border: 3px solid var(--text-color);
+     border-radius:5px;
+     font-size:20px;
      padding-left: 10px;
-     line-height: 20px;  
-     font-weight: bold;
-     height: 40px;
-     margin-right: 10px;
 }
- /* thanh tìm kiếm */
-div.search>a.timkiem{
-     font-size: 28px;
+/* icon kính*/
+.header .header-input .search{
      position: absolute;
-     top:9px;
-     right: 210px;
+     top: 4px;
+     right: 3px;
+     font-size: 30px;
+
 }
- /* màu chữ trong thanh tìm kiếm */
-.timkiem>i{
-     color: grey;
+/* thẻ định dạng chung 3 icon (kính, tim, vỏ hàng) */
+.header .icon{
+     font-size:30px;
+     padding: 6px 20px 0px;
+     line-height: 36px;
+     background-color: var(--text-color);
+     color: #fff;
+     border-radius:5px;
 }
-.timkiem>i:hover{
-     color: var(--text-color);
-}
- /* chỉnh giỏ hàng */
-.search>a.giohang{
-     border-radius: 7px;
-     border: 2px solid gray ;
-     margin-right: 75px;
-     padding: 2px 10px 9px 10px; 
-     color:black;
-     font-size: 25px;
-     display: inline-flex;
-     margin-left: 10px;
-}
-/* hiệu ứng cho vỏ hàng */
-.search>a.giohang:hover{
-     color: var(--text-color);
-}
-/* Trái tim */
-.search .tim{
-     border-radius: 7px;
-     border: 2px solid gray;
-     padding: 2px 10px 4px 8px;
-     text-shadow: 1px 1px 1px grey;
-     font-size: 25px;
-     color: black;
-}
-/* chỉnh hiệu ứng trái tim */
-.search .tim:hover{
-     color: var(--text-color);
-     text-shadow: 0 0 3px red;
-}
-/*-------------------------------- */
+/* thẻ ul */
 .nav{
      margin-bottom:20px;
      background-color:#000;
      height: 60px;
      text-align: center;
 }
+/* thẻ ulmenu lớn, menu con */
 .nav, .subnav{
      list-style: none;
      padding-left: 0;
@@ -144,44 +123,12 @@ div.search>a.timkiem{
      line-height:40px;
      font-size:13pt;
 }
- /* tag ul trong menu */
-/* ul{
-     display: flex;
-     justify-content: center;
-     background-color:black;
-     margin-bottom: 20px;
-     
-}
-ul li{
-     margin: 0px 30px;
-     list-style: none;
-     line-height: 55px;
-}
-ul li a{
-     font-size: 14pt;
-     text-decoration: none;
-     color: white;
-     letter-spacing: 2px;
-} */
-
-/* hiệu ứng menu */
-/* .menu>ul>li:hover{
-     color: var(--text-color);
-     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-     transform: translateY(-3px) ;
-     transition: 250ms;
-     cursor: pointer;
-     text-transform: uppercase;
-}
-.menu>ul>li>a:hover{
-     color: var(--text-color);
-} */
-header{
+.Banner{
      margin: 0px auto;
      width: 90%;
 }
 /* ảnh header  */
-header img{
+.Banner img{
      width: 100%;
 }
  /*hãng(Nhà sản xuất) */
@@ -224,9 +171,7 @@ h1{
      color: var(--text-color);
 }
  /* Chia vùng */
-br{
-     clear: both;
-}
+
  /* khung 2 */
 .boxmacbook{
      width: 90%;
