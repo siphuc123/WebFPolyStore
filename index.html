@@ -24,6 +24,53 @@
 
 <body>
      <a name="TOP"></a>
+     <input type="checkbox"name="" hidden class="modal-input" id="modal-input">
+     <label for="modal-input" class="modal">
+          <label for="" class="modal__container">
+               <label for="modal-input" class="close"><i class='bx bx-x'></i></label>
+               <h3 class="title-modal">
+                    <i class='title-modal-icon bx bxs-phone-call'></i>
+                    Liên hệ</h3>
+               <form class="modal-content">
+                    <div class="margin">
+                         <label class="modal-label" for="name">
+                              Họ và tên
+                              <input class="modal-input" required type="text" placeholder="Nhập tên đầy đủ..." name="" id="name">
+                         </label>
+                    </div class="margin">
+                    <div class="margin">
+                         <label class="modal-label" for="call">
+                              Điện thoại
+                              <input class="modal-input" required min="0" max="9" type="number" placeholder="Nhập số điện thoại..." name="" id="call">
+                         </label>
+                    </div>
+                    <div class="margin">
+                         <label class="modal-label" for="mail">
+                              Email
+                              <input class="modal-input" required type="text" placeholder="Nhập email..." name="" id="mail">
+                         </label class="modal-label">
+                    </div>
+                    <div class="margin">
+                         <label class="modal-label" for="note">
+                              Nội dung
+                              <textarea class="modal-input" required placeholder="Nhập nội dung liên hệ..." name="" id="note" cols="30" rows="6"></textarea>
+                         </label>
+                    </div>
+                    <button class="modal-button">Gửi đi</button>
+               </form>
+          </label>
+     </label>
+     <!-- <div class="header-more">
+          <div class="header-more__left">
+               <div class="header-more__left--icon"><i class='bx bxs-map'></i><span class='header-more__left--text'>không thông tin</span></div>
+               <div class="header-more__left--icon"><i class='bx bxs-phone'></i><span class='header-more__left--text'>chưa có thông</span></div>
+               <div class="header-more__left--icon"><i class='bx bx-time'></i><span class='header-more__left--text'>không thông tin</span></div>
+          </div>
+          <div class="header-more__right">
+               <div class="header-more__right--nati"><i class='bx bx-globe' ></i></div>
+               
+          </div>
+     </div> -->
      <!-- Begin header -->
      <div class="header-menu">
 
@@ -37,8 +84,8 @@
                </div>
                <div class="header-shop">
                     <a href="" class="heart icon"><i class='bx bx-heart'></i></a>
-                    <a href="" class="cart icon"><i class='bx bxs-cart'></i></a>
-                    <span class="header-shop-text">Giỏ hàng</span>
+                    <a href="" class="cart icon"><i class='bx bx-cart-alt' ></i></a>
+                    <!-- <span class="header-shop-text">Giỏ hàng</span> -->
                </div>
           </div>
           <!-- End header -->
@@ -59,7 +106,7 @@
                               <li><a href="">Phần mềm</a></li>
                          </ul>
                     </li>
-                    <li><a href=""><i class='bx bxs-phone-call'></i> Liên hệ</a></a></li>
+                    <li><a href=""><label for="modal-input"><i class='bx bxs-phone-call'></i> Liên hệ</label></a></li>
                     <li><a href=""><i class='bx bx-street-view'></i> About us</a></li>
                     <li><a href=""><i class='bx bxs-chat'></i> Faq</a></li>
                </ul>
@@ -71,7 +118,7 @@
           <img src="images/header2.png" alt="">
      </div>
      <!--  End banner -->
-
+     <div id="noibat"></div>
      <!-- Begin Danhmuc -->
      <div class="danhmuc">
           <div class="danhmuc__list">
@@ -86,13 +133,52 @@
           </div>
      </div>
      <!-- End Danhmuc -->
-
-
-
+     <div class="menu-top">
+          <div class="menu-top__list">
+               <a href="#noibat" class="menu-top__list__item">
+                    <div class="box-icon">
+                         <i class='bx bxs-hot item-icon' ></i>
+                    </div>
+                    <p>Nỗi bật</p>
+               </a>
+               <a href="#gaming" class="menu-top__list__item">
+                    <div class="box-icon">
+                         <i class='bx bxs-hot item-icon' ></i>
+                    </div>
+                    <p>Nỗi bật</p>
+               </a>
+               <a href="#macbook" class="menu-top__list__item">
+                    <div class="box-icon">
+                         <i class='bx bxs-hot item-icon' ></i>
+                    </div>
+                    <p>Nỗi bật</p>
+               </a>
+               <a href="#hoctap" class="menu-top__list__item">
+                    <div class="box-icon">
+                         <i class='bx bxs-hot item-icon' ></i>
+                    </div>
+                    <p>Nỗi bật</p>
+               </a>
+               <a href="#mongnhe" class="menu-top__list__item">
+                    <div class="box-icon">
+                         <i class='bx bxs-hot item-icon' ></i>
+                    </div>
+                    <p>Nỗi bật</p>
+               </a>
+               <a href="#sangtrong" class="menu-top__list__item">
+                    <div class="box-icon">
+                         <i class='bx bxs-hot item-icon' ></i>
+                    </div>
+                    <p>Nỗi bật</p>
+               </a>
+               
+          </div>
+     </div>
+     
      <!-- Begin content -->
      <content>
           <!-- Begin box nỗi bật -->
-          <div class="container">
+          <div  class="container">
                <div class="container-heading">
                     <i class='bx bxs-hot'></i> SẢN PHẨM NỔI BẬT <i class='bx bxs-hot'></i>
                </div>
@@ -247,14 +333,16 @@
                                    <p class="sale warning">Trả góp 0%</p>
                                    <p class="sale primary">lì xì 1.000.000đ</p>
                               </div>
+                              
                          </div>
                     </div>
                     <!-- End SP1 -->
                </div>
           </div>
           <!-- End box nỗi bật -->
-
+          
           <!-- Begin box Gaming -->
+          <div id="gaming" ></div>
           <div class="container-background container-background-gaming">
                <!-- Begin box gaming 1-->
                <div class="container container-size container-size-gaming">
@@ -387,7 +475,7 @@
                          <!-- Begin SP1 -->
                          <div class="Product">
                               <div class="Product-content">
-                                  <a href="/Product.html"> <img class="Product-img" src="images/img-SP/nb-sp5.jfif" alt=""></a>
+                                   <a href="/Product.html"> <img class="Product-img" src="images/img-SP/nb-sp5.jfif" alt=""></a>
                                    <a class="Product-name" href="/Product.html">MacBook Pro 13" 2020 Touch Bar</a>
                                    <div class="Product-Memory">RAM 16GB</div>
                                    <div class="Product-Memory">SSD 1 TB</div>
@@ -578,17 +666,17 @@
                     </div>
                     <label for="Products-input-more-gaming" class="Products-more-text"><span class="more-text more-text-gaming">Xem tất cả
                               laptop Gaming</span>
+                    <div id="macbook" ></div>
                     </label>
                </div>
                <!-- End box gaming 2-->
           </div>
           <!-- End box Gaming -->
 
-
           <!-- Begin box macbook, học tập.....-->
           <div class="container-background">
                <!-- Begin box macbook 1-->
-               <div class="container container-size">
+               <div  class="container container-size">
                     <div class="container-heading container-heading-size ">
                          <img src="/images/macbook_img/banner.jpg" alt="">
                     </div>
@@ -626,7 +714,7 @@
                          <!-- Begin SP1 -->
                          <div class="Product">
                               <div class="Product-content">
-                                  <a href="/Product.html"> <img class="Product-img" src="images/img-SP/nb-sp2.jpg" alt=""></a>
+                                   <a href="/Product.html"> <img class="Product-img" src="images/img-SP/nb-sp2.jpg" alt=""></a>
                                    <a class="Product-name" href="/Product.html">MacBook Pro 16" 2021 M1 Pro Ram 32GB</a>
                                    <div class="Product-Memory">RAM 32GB</div>
                                    <div class="Product-Memory">SSD 512 GB</div>
@@ -909,12 +997,13 @@
                     </div>
                     <label for="Products-input-more" class="Products-more-text"><span class="more-text">Xem tất cả
                               laptop macbook</span>
+               <div id="hoctap"></div>
+
                     </label>
                </div>
                <!-- End box macbook 2-->
-
                <!-- Begin box học tập 1-->
-               <div class="container container-size">
+               <div  class="container container-size">
                     <div class="container-heading container-heading-size ">
                          <img src="/images/hoctap-img/banner.jpg" alt="">
                     </div>
@@ -1235,12 +1324,12 @@
                     </div>
                     <label for="Products-input-more-first" class="Products-more-text"><span class="more-text">Xem tất cả
                               laptop học tập và văn phòng</span>
+               <div id="mongnhe"></div>
                     </label>
                </div>
                <!-- End box học tập 2-->
-
                <!-- Begin box mỏng nhẹ 1-->
-               <div class="container container-size">
+               <div  class="container container-size">
                     <div class="container-heading container-heading-size ">
                          <img src="/images/mongnhe-img/banner.jpg" alt="">
                     </div>
@@ -1561,12 +1650,12 @@
                     </div>
                     <label for="Products-input-more-second" class="Products-more-text"><span class="more-text">Xem tất cả
                               laptop mỏng nhẹ</span>
+               <div id="sangtrong"></div>
                     </label>
                </div>
                <!-- End box mỏng nhẹ  2-->
-
                <!-- Begin box sang trọng 1-->
-               <div class="container container-size">
+               <div  class="container container-size">
                     <div class="container-heading container-heading-size ">
                          <img src="/images/sangtrong-img/banner.jpg" alt="">
                     </div>
@@ -1959,7 +2048,7 @@
                          <div class="end-text">Không có nôin dung</div>
                     </div>
                     <div class="end-heading">
-                         <div class="end-icon"><i class='bx bx-phone-call'></i></div>
+                         <div class="end-icon"><i class='bx bxs-phone'></i></div>
                          <div class="end-text">Không có nôin dung</div>
                     </div>
                     <div class="end-heading">
@@ -1968,10 +2057,10 @@
                     </div>
                </div>
           </div>
-          <!-- <img src="images/logoF.png" alt="Logo footer" width=170px> -->
           <div class="footer-heading-end">FPoly Store © 2022. All rights reserved</div>
      </footer>
      <!-- End footer -->
+     
 </body>
 
 </html>

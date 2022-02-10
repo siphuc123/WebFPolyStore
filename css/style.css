@@ -5,18 +5,18 @@
      box-sizing: border-box;
 }
  /* import font */
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap'); */
  /*cài font và size cho cả bài */
 html{
      font-family: 'Fira Sans', sans-serif;
      /* background-color:#f5f5f5; */
+     scroll-behavior: initial;
+     
 }
 /* (Lớp giả) đỗi màu chung*/
 :root{
      --text-color:#cd1817;
      --text-background:#eaeaea;
-     /*  */
-     /* #cf1e1e; */
 }
 .black{
      color: #000 !important;
@@ -27,6 +27,17 @@ html{
 br{
      clear: both;
 }
+
+/* --------------header thêm-------------- */
+/* .header-more{
+
+}
+.header-more__left{
+
+}
+.header-more__right{
+
+} */
 /* --------------header-------------- */
 .header-menu{
      background-color: #fff;
@@ -101,8 +112,8 @@ br{
 }
 .header-shop .header-shop-text{
      color: #555;
-     line-height: 66px;
-     transform: translateX(-19px);
+     line-height: 68px;
+     transform: translateX(-18px);
 }
 .header-shop .cart:hover ~ .header-shop-text,
 .header-shop .icon:hover{
@@ -122,6 +133,7 @@ br{
 }
 .nav > li{
      display: inline-block;
+     transition: all 0.4s linear;
 }
 .nav li{
      position: relative;
@@ -131,7 +143,7 @@ br{
      color: #fff;
 }
 .nav li a{
-     font-size: 15pt;
+     font-size: 13pt;
      text-decoration: none;
      line-height:60px;
      padding: 0px 32px;
@@ -153,6 +165,7 @@ br{
      display: none;
      box-shadow:0 0 10px rgba(0, 0, 0, 0.3);
      min-width: 200px;
+     transform: translateY(-60px);
 }
 .nav .subnav li{
      text-align: left;
@@ -204,30 +217,50 @@ br{
      transition: 250ms;
      cursor: pointer;
 }
-/* .danhmuc{
-     width: 80%;
-     margin: 0px auto;
-     height: 70px;
-     z-index: 1;
-     line-height: 93px;
-     text-align: center;
-     border-radius: 50px;
-     background-color:black;
-     margin-top: 5px;
-}
- /* ảnh trong danh mục  */
-/* .danhmuc a img{
-     border-radius:  30px;
-     margin: 0px 7px;
-     width: 130px;
-}
-.danhmuc a img:hover{
-     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-     transform: scale(1.2);
-     transition: 250ms;
-     cursor: pointer;
-} */
 
+/* ------------------------------- */
+.menu-top{
+     background-color: #222222;
+     width: 100%;
+     min-height:100px;
+     position: -webkit-sticky;
+     position: sticky;
+     top: 0;
+     z-index: 2;
+}
+.menu-top__list{
+     width:80%;
+     margin: 0 auto;
+     display:flex;
+     justify-content:space-around;
+     align-items:center;
+     padding-top: 10px;
+}
+.menu-top__list__item{
+     color: #fff;
+     line-height: 17px;
+     text-decoration: none;
+     padding: 0 72px;
+     font-size: 14px;
+     text-align: center;
+}
+.box-icon{
+     align-items: center;
+     border-radius: 50%;
+     display: flex;
+     justify-content: center;
+     height: 56px;
+     margin: 0 auto 6px;
+     width: 56px;
+     background-color: #f1f1f1;
+} 
+.item-icon{
+     font-size: 44px;
+     background-position: 0 0;
+     width: 42px;
+     height: 42px;
+     color: #01415b;
+}
 /* ----------------dùng chung content---------------- */
 .Products{
      display: flex;
@@ -271,9 +304,9 @@ br{
      text-decoration: none;
      color: #666;
      font-size: 16px;
-     font-weight:600;
-     font-family: Arial, Helvetica, sans-serif;
+     font-weight: 600;
      transition: all 0.3s linear;
+     min-height: 50px;
 }
 .Product-Memory{
      display: inline-block;
@@ -356,12 +389,12 @@ br{
      cursor: pointer;
      animation: dipup linear .8s;
 }
-.Product:hover .Product-buy{
+/* .Product:hover .Product-buy{
      display: block;
-}
-.Product-buy:hover{
+} */
+/* .Product-buy:hover{
      opacity:0.8;
-}
+} */
 .Product .Product-name:hover {
      color: #0168fa;
 }
@@ -370,7 +403,7 @@ br{
           transform:translateY(0);
      }
      50%{
-          transform:translateY(-5px);
+          transform:translateY(-10px);
      }
      100%{
           transform:translateY(0);
@@ -515,6 +548,7 @@ footer{
      line-height: 52px;
      text-align: center;
      font-weight: 500;
+     font-family:'Fira Sans', sans-serif;
 }
 
 .logo-img{
@@ -604,4 +638,97 @@ footer{
      letter-spacing: 2px;
      font-size: 20px;
 }
-
+/* liên hệ */
+.modal{
+     position: fixed;
+     top: 0;
+     right: 0;
+     left: 0;
+     bottom: 0;
+     background-color: rgba(0, 0, 0, 0.6);
+     z-index: 3;
+     display: none;
+}
+.modal__container{
+     background-color: #fff;
+     width: 50%;
+     position: absolute;
+     left: 50%;
+     top: 50%;
+     transform: translate(-50%,-50%);
+     border-radius: 10px;
+     z-index: 4;
+     
+}
+.modal .title-modal{
+     border-radius: 10px 10px 0 0;
+     width: 100%;
+     height: 130px;
+     background-color: var(--text-color);
+     color: #fff;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     font-size: 30px;
+     letter-spacing: 2px;
+     position: relative;
+}
+.title-modal-icon{
+     margin-right: 8px;
+}
+.modal .close{
+     position: absolute;
+     right: 0;
+     top: 0;
+     z-index: 4;
+     padding: 8px;
+     font-size: 28px;
+     color: #fff;
+}
+.modal-content{
+     max-width: 90%;
+     margin: 0 auto;
+     padding: 16px 0;
+}
+.modal-label{
+     font-size: 19px;
+     font-weight: 600;    
+     position: relative;
+}
+.modal-input{
+     width: 100%;
+     outline: none;
+     border: 1px solid #eee;
+     padding: 12px 0;
+     padding-left: 12px;
+     margin: 6px 0px;
+     border-radius: 10px;
+     font-style: italic;
+     background: #eee;
+     box-sizing: border-box;
+     transition: .3s linear;
+}
+.modal-input:focus{
+     background-color: #fff;
+     box-shadow: 0 0 20px #ccc;
+}
+.modal-button{
+     margin: 4px 0px 4px;
+     width: 100%;
+     line-height: 48px;
+     color: #fff;
+     font-size: 20px;
+     background-color: var(--text-color);
+     border-radius: 10px;
+}
+.modal-button:hover{
+     opacity: .7;
+}
+.margin{
+     margin: 16px 0;
+}
+.modal-input:checked ~ .modal,
+.modal-input:checked ~ .modal__container
+{
+     display: block;
+}
