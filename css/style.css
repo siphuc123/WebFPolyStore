@@ -10,7 +10,7 @@
 html{
      font-family: 'Fira Sans', sans-serif;
      /* background-color:#f5f5f5; */
-     scroll-behavior: initial;
+     scroll-behavior: smooth;
      
 }
 /* (Lớp giả) đỗi màu chung*/
