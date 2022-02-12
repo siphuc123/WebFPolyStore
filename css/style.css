@@ -133,7 +133,6 @@ br{
 }
 .nav > li{
      display: inline-block;
-     transition: all 0.4s linear;
 }
 .nav li{
      position: relative;
@@ -148,6 +147,7 @@ br{
      line-height:60px;
      padding: 0px 32px;
      display: block;
+     transition: all linear .2s;
 }
 .nav li:hover .subnav{
      display: block;
@@ -156,7 +156,9 @@ br{
 .nav .subnav li:hover a{
      color: #000;
      background-color:#ccc;
+     border-radius: 5px;
 }
+
 .nav .subnav{
      position: absolute;
      top: 100%;
@@ -164,33 +166,41 @@ br{
      background-color: #fff;
      display: none;
      box-shadow:0 0 10px rgba(0, 0, 0, 0.3);
-     min-width: 200px;
-     transform: translateY(-60px);
+     min-width: 218px;
+     border-radius: 5px;
+     animation: navFaceIn linear .5s;
 }
 .nav .subnav li{
      text-align: left;
 }
 .nav .subnav a{
      color: #000;
-     padding: 0 12px;
+     padding: 0 26px;
      line-height:40px;
      font-size:13pt;
+     margin: 4px 4px;
+}
+@keyframes navFaceIn {
+     from{
+          opacity: 0;
+     }
+     to{
+          opacity: 1;
+     }
 }
 /* ----------------Banner---------------- */
-/* .Banner{
-     width:100%;
-} */
 /* ảnh header  */
 .Banner img{
      width: 100%;
      display: block;
+     /* min-height: 100px; */
 }
 /* ----------------Hãng---------------- */
  /*hãng(Nhà sản xuất) */
 .danhmuc {
      width: 100%;
      background-color: #080312;
-     min-height: 66px;
+     min-height: 80px;
      display:flex;
      align-items: center;
      justify-content: center;
@@ -227,6 +237,7 @@ br{
      position: sticky;
      top: 0;
      z-index: 2;
+     margin-bottom: 30px;
 }
 .menu-top__list{
      width:80%;
@@ -522,6 +533,7 @@ del{
      line-height: 45px;
      font-size: 30px;
      color: white;
+     z-index: 5;
 }
 
 /* ----------------footer---------------- */
@@ -645,20 +657,21 @@ footer{
      right: 0;
      left: 0;
      bottom: 0;
-     background-color: rgba(0, 0, 0, 0.6);
+     background-color: rgba(0, 0, 0, 0.8);
      z-index: 3;
      display: none;
 }
+
 .modal__container{
      background-color: #fff;
      width: 50%;
+     border-radius: 10px;
+     z-index: 4;
      position: absolute;
      left: 50%;
      top: 50%;
      transform: translate(-50%,-50%);
-     border-radius: 10px;
-     z-index: 4;
-     
+     animation: modalFaceIn ease 0.5s;
 }
 .modal .title-modal{
      border-radius: 10px 10px 0 0;
@@ -673,6 +686,7 @@ footer{
      letter-spacing: 2px;
      position: relative;
 }
+
 .title-modal-icon{
      margin-right: 8px;
 }
@@ -728,7 +742,16 @@ footer{
      margin: 16px 0;
 }
 .modal-input:checked ~ .modal,
-.modal-input:checked ~ .modal__container
-{
+.modal-input:checked ~ .modal__container{
      display: block;
+} 
+@keyframes modalFaceIn{
+     from{
+          opacity: 0;
+          transform: translate(-50%, -70%);
+     }
+     to{
+          opacity: 1;
+          transform: translate(-50%, -50%);
+     }
 }
