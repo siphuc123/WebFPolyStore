@@ -1,0 +1,115 @@
+
+:root{
+   --text-color:#cd1817;
+   --text-background:#eaeaea;
+
+}
+.main_Product{
+
+}
+.main_Product .container__Product{
+   width: 80%;
+   margin: 0 auto;
+}
+.main_Product .Product__heading{
+   padding: 12px 0px;
+   margin-bottom: 12px;
+   border-bottom: 1px solid #ccc;
+   font-size: 23px;
+}
+.main_Product .container__top{
+   display: flex;
+   justify-content: space-between;
+}
+.main_Product .container__top__img{
+   width: calc(50% - 16px);
+}
+.main_Product .container__top__buy{
+   width: calc(50% - 16px);
+} 
+.main_Product  .buy--Price--text{
+   display: inline-block;
+   padding-right: 16px;
+   font-size: 21px;
+   color: var(--text-color)
+}
+.main_Product .container__top__buy--price del{
+   color: gray;
+   font-size: 19px;
+}
+
+/* --------------checkbox------------ */
+.main_Product .container__top__buy--input{
+   background-color: #eee;
+   border-radius: 3px;
+   border: 1px solid #ccc;
+   margin-top: 12px;
+}
+.main_Product .buy--input--name{
+   padding: 8px 12px;
+   border-bottom: 1px solid #ccc;
+}
+.main_Product .buy--input{
+   padding: 8px 12px 6px;
+   display: block;
+   cursor: pointer;
+}
+.main_Product .buy--input--subname{
+   border-top: 1px solid #ccc;
+}
+.main_Product .buy--input--subname-heading{
+   display: inline-block;
+    background-color: #ccc;
+    padding: 4px 8px;
+    border-bottom-right-radius: 4px;
+}
+.main_Product .buy--input--subname > p{
+   padding: 4px 8px;
+}
+.main_Product .buy--input--subname--icon{
+   color: #48bb78;
+}
+
+/* --------------buy------------ */
+.main_Product .container__top__buy--buy{
+   text-align: center;
+}
+.main_Product .butfirst{
+   margin-top: 16px;
+}
+.main_Product .butsecond{
+   display: flex;
+    justify-content: space-between;
+    margin-top: 8px;
+}
+.main_Product .button{
+   width: 100%;
+    border-radius: 5px;
+    line-height: 18px;
+    padding: 8px;
+    color: #fff;
+    font-size: 14px;
+    background-color: var(--text-color);
+    transition: all linear .2s;
+}
+.main_Product .button__blue{
+   width: calc(50% - 4px);
+   background-color: #0664f9;
+}
+.main_Product .button__heading{
+   text-transform: uppercase;
+}
+.main_Product .button:hover{
+   opacity: .5;
+   cursor: pointer;
+}
+/* --------------content------------ */
+.main_Product .container__bot{
+
+}
+.main_Product .container__bot--content{
+
+}
+.main_Product .container__bot--parameter{
+
+}
