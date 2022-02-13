@@ -78,6 +78,7 @@ html{
      padding-left: 10px;
      outline: none;
 }
+
 /* icon kính*/
 .header .search{
      font-size: 30px;
@@ -166,7 +167,7 @@ html{
      box-shadow:0 0 10px rgba(0, 0, 0, 0.3);
      min-width: 218px;
      border-radius: 5px;
-     animation: navFaceIn linear .5s;
+     animation: navFaceIn linear .25s;
 }
 .nav .subnav li{
      text-align: left;
@@ -181,9 +182,11 @@ html{
 @keyframes navFaceIn {
      from{
           opacity: 0;
+          transform: translateY(20px);
      }
      to{
           opacity: 1;
+          transform: translateY(0);
      }
 }
 /* ---------------liên hệ------------------ */
@@ -297,7 +300,6 @@ html{
 .Banner img{
      width: 100%;
      display: block;
-     /* min-height: 100px; */
 }
 /* ----------------Hãng---------------- */
  /*hãng(Nhà sản xuất) */
@@ -371,10 +373,21 @@ html{
 } 
 .item-icon{
      font-size: 44px;
-     background-position: 0 0;
-     width: 42px;
-     height: 42px;
-     color: #01415b;
+    background-position: 0 0;
+    width: 45px;
+    height: 45px;
+    color: #01415b;
+}
+.menu-top__list__item > p{
+     font-size: 14px;
+     line-height: 120%;
+     white-space: nowrap;
+}
+.menu-top__list__item:hover .box-icon{
+     background-color: yellow;
+}
+.menu-top__list__item:active .box-icon{
+     background-color: yellow;
 }
 /* ----------------dùng chung content---------------- */
 .Products{
@@ -657,6 +670,7 @@ footer{
      text-align: center;
      font-weight: 500;
      font-family:'Fira Sans', sans-serif;
+     letter-spacing: 2px;
 }
 
 .logo-img{
@@ -678,7 +692,7 @@ footer{
 .footer-link{
      display: flex;
      flex-direction: column;
-     width: 220px;
+     width: 240px;
 }
 .link-heading{  
      font-size: 20px;
@@ -686,17 +700,7 @@ footer{
      margin-bottom: 12px;
      font-weight:500;
      padding-bottom: 10px;
-     /* border-bottom: .5px solid #ccc; */
      position: relative;
-}
-.link-heading::before{
-     content: "";
-     position: absolute;
-     left: 0;
-     bottom: 0;
-     width: 30%;
-     height: 1px;
-     background-color: var(--text-color);
 }
 .link-heading::after{
      content: "";
@@ -715,14 +719,18 @@ footer{
      line-height: 34px;
      position: relative;
      padding-bottom: 4px;
+     transition: all linear .2s;
 }
 
 .footer-end{
-     width: 220px;
+     width: 260px;
+    display: flex;
+    flex-direction: column;
 }
 .end-heading{
      display: flex;
      align-items: center;
+     padding: 4px 0;
 }
 .end-heading-text{
      line-height: 34px;
@@ -734,7 +742,9 @@ footer{
      font-size: 28px;
 }
 .end-text{
-     font-size: 16px;
+     font-size: 18px;
+     max-width: 165px;
+     line-height: 22px;
 }
 
 .footer-heading-end{
@@ -746,5 +756,6 @@ footer{
      letter-spacing: 2px;
      font-size: 20px;
 }
-
-
+.footer-content a:hover{
+     color: var(--text-color);
+}
