@@ -83,7 +83,7 @@ html{
 .header .search{
      font-size: 30px;
      background: var(--text-color);
-     padding: 6px 20px 0;
+     padding: 6px 21px 0;
      color:#fff;
 }
 
@@ -116,7 +116,7 @@ html{
 }
 .header-shop .cart:hover ~ .header-shop-text,
 .header-shop .icon:hover{
-     color: #000;
+     color: var(--text-color);
 }
 /* ----------------menu(nav)---------------- */
 /* thẻ ul */
@@ -287,14 +287,13 @@ html{
 @keyframes modalFaceIn{
      from{
           opacity: 0;
-          transform: translate(-50%, -70%);
+          transform: translate(-50%, -80%);
      }
      to{
           opacity: 1;
           transform: translate(-50%, -50%);
      }
 }
-
 /* ----------------Banner---------------- */
 /* ảnh header  */
 .Banner img{
