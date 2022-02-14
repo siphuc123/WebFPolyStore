@@ -539,10 +539,10 @@ html{
 .container-size-gaming{
      background-color: #25304b!important;
 }
-.more-text-gaming{
-     background-color: #fec100!important;
+.container-background-gaming .more-text-gaming{
+     background-color: #fec100;
      box-shadow: 0 0 10px #fec100;
-     color: #25304b!important;
+     color: #25304b;
 }
 /* ----------------khung mac ,học tập, mỏng nhẹ,sang trọng---------------- */
 .container-background{
