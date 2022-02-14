@@ -83,7 +83,7 @@ html{
 .header .search{
      font-size: 30px;
      background: var(--text-color);
-     padding: 6px 22px 0;
+     padding: 6px 20px 0;
      color:#fff;
 }
 
@@ -544,6 +544,21 @@ html{
      box-shadow: 0 0 10px #fec100;
      color: #25304b;
 }
+.more-text-gaming {
+     background-color: #fff;
+     padding: 8px 72px;
+     font-size: 16px;
+     text-transform: uppercase;
+     border-radius: 4px;
+}
+.more-text-gaming:hover{
+     color: #fec100;
+     background-color:#25304b;
+     border-radius: 20px;
+     border: 1px solid #0664f9;
+     transition: all 0.6s linear;
+     text-shadow: 0px 0px 8px #fec100;
+}
 /* ----------------khung mac ,học tập, mỏng nhẹ,sang trọng---------------- */
 .container-background{
      width: 100%;
@@ -575,6 +590,13 @@ html{
      font-size: 16px;
      text-transform: uppercase;
      border-radius: 4px;
+}
+.more-text:hover{
+     color: #fff;
+     background-color:black;
+     border-radius: 20px;
+     border: 1px solid #0664f9;
+     transition: all 0.3s linear;
 }
 del{
      color: gray;
@@ -750,11 +772,11 @@ footer{
 .footer-heading-end{
      background-color: #000;
      color: #ccc;
-     min-height: 60px;
+     min-height: 50px;
      text-align: center;
-     line-height: 60px;
+     line-height: 50px;
      letter-spacing: 2px;
-     font-size: 20px;
+     font-size: 18px;
 }
 .footer-content a:hover{
      color: var(--text-color);
