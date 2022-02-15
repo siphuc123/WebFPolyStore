@@ -45,6 +45,7 @@
 .main__cart table{
    border-collapse: collapse;
    text-align: center;
+   cursor: pointer;
 }
 .main__cart table td{
    border: 1px solid #ccc;
@@ -79,6 +80,7 @@
 }
 .main__cart .main__cart__buy > button:hover{
    opacity: 0.5;
+   cursor: pointer;
 }
 .main__cart .main__cart__buy > p{
    font-size: 13px;

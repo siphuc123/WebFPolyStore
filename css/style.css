@@ -58,7 +58,10 @@ html{
      font-family: fantasy;
      letter-spacing: 3px;
 }
-
+.header__a{
+     color: #000;
+     text-decoration: none;
+}
 /* khung chứa thanh tìm kiếm và icon kính */
 .header .header-input{
      margin:0px 100px;
