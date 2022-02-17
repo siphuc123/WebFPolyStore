@@ -35,9 +35,13 @@
 /* --------------ảnh sản phẩm------------ */
 .main_Product .container__top__img{
    width: calc(50% - 16px);
+   text-align: center;
 }
 .main_Product .container__top__img img{
    width: 100%;
+}
+.main_Product .container__top__img_mouse img{
+   max-width: 330px;
 }
 
 .main_Product .container__top__list{
