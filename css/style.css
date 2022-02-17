@@ -500,7 +500,7 @@ html{
 .Product-sale .warning{
      background-color: #ea9d02;
      display: inline-block;
-     max-width: 90px;
+     max-width: 100px;
      line-height: 24px;
 }
 .Product-sale .primary{
