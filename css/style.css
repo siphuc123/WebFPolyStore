@@ -57,11 +57,11 @@ html{
      padding-right: 22px;
      font-family: fantasy;
      letter-spacing: 3px;
+} 
+.header>a {
+text-decoration: none;
 }
-.header__a{
-     color: #000;
-     text-decoration: none;
-}
+
 /* khung chứa thanh tìm kiếm và icon kính */
 .header .header-input{
      margin:0px 100px;
@@ -86,7 +86,7 @@ html{
 .header .search{
      font-size: 30px;
      background: var(--text-color);
-     padding: 6px 21px 0;
+     padding: 6px 20px 0;
      color:#fff;
 }
 
@@ -500,7 +500,7 @@ html{
 .Product-sale .warning{
      background-color: #ea9d02;
      display: inline-block;
-     max-width: 90px;
+     max-width: 95px;
      line-height: 24px;
 }
 .Product-sale .primary{
