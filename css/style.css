@@ -117,9 +117,18 @@ html{
      line-height: 68px;
      transform: translateX(-18px);
 }
-.header-shop .cart:hover ~ .header-shop-text,
+/* .header-shop .cart:hover ~ .header-shop-text,
 .header-shop .icon:hover{
      color: var(--text-color);
+     
+} */
+.header-shop .cart:hover {
+     text-shadow: -3px -4px 6px blue;
+     color: royalblue;
+}
+.header-shop .heart:hover {
+     text-shadow: 3px 4px 6px red;
+     color:#cb1c22;
 }
 /* ----------------menu(nav)---------------- */
 /* thẻ ul */
