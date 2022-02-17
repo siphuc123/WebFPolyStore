@@ -19,15 +19,15 @@ div.banner>img {
  /* Chữ ở giữa banner  */
 h1.bigWordTitle{
     position: absolute;
-    left: 43%;
-    top: 32%;
+    left: 42%;
+    top: 38%;
     font-size: 60px;
     font-weight: 500;
 }
 .smallWordTitle {
     position: absolute;
-    left: 38%;
-    top: 40%;
+    left: 37%;
+    top: 47%;
     font-size: 25px;
     font-weight: 400;
     font-style: italic;
