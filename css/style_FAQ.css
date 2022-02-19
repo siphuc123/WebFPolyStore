@@ -3,6 +3,22 @@
    background-color: #eff1f5;
    padding: 24px 0;
 }
+.chatbox{
+   width: 60px;
+   height: 60px;
+   background-color:#cd1817;
+   float: right;
+   position: fixed;
+   right: 12px;
+   top: 296px;
+   border-radius: 50%;
+   font-size: 40px;
+   color: #fff;
+}
+.chat{
+   margin-top: 12px;
+   margin-left: 10px;
+}
 .contain {
    width: 50%;
    margin: 0px auto;
@@ -11,27 +27,28 @@
    /* margin: 24px; */
 }
 .shared{
-   background-color: #ffffff;
+   background-color: #fff;
    border-radius: 5px;
    /* margin-bottom: 2px; */
    padding: 20px 0 ;
    border-bottom: 1px solid #eee;
-  
 }
 .shared>p{
    margin-left: 20px;
    font-size: 30px;
 }
 .FAQ{
-   background-color: #ffffff;
-   border: 1px solid white ;
+   background-color: #fff;
+   border: 1px solid #fff ;
    border-radius: 5px;
 }
 .contain > .FAQ > ul > li{
    margin: 30px auto;
-   color:  #4a6567;
+   color:  #444;
    font-size: 20px;
+   transition: all linear .3s;
 }
 .contain > .FAQ > ul > li:hover{
    color: blue;
+   cursor: pointer;
 }
