@@ -44,11 +44,32 @@
 }
 .contain > .FAQ > ul > li{
    margin: 30px auto;
-   color:  #444;
+   color:  #666;
    font-size: 20px;
-   transition: all linear .3s;
 }
 .contain > .FAQ > ul > li:hover{
-   color: blue;
+   color: #000;
    cursor: pointer;
 }
+.contain > .FAQ > ul > li:hover .faq_subinput1{
+   display: block;
+}
+.contain .faq_subinput1{
+   font-size: 17px;
+   max-width: 90%;
+   text-align: justify;
+   background-color: #ccc;
+   padding: 12px;
+   display: none;
+   animation:FadeIn linear .5s;
+
+}
+@keyframes FadeIn {
+   from {
+      opacity: 0;
+   }
+   to {
+      opacity: 1;
+   }
+}
+
