@@ -167,8 +167,12 @@
 
 .main_Product .bot--content--subtext{
    text-align: justify;
-   padding: 0 0 6px;
+   padding: 0 0 8px;
     line-height: 1.4;
+}
+.main_Product .bot--content--img{
+   width: 100%;
+   padding: 12px 0;
 }
 .main_Product .bot--parameter--more{
    font-size: 14px;
@@ -179,6 +183,21 @@
    cursor: pointer;
    z-index: 4;
 }
+
+.main_Product .bot--parameter--submore2,
+.main_Product .bot--content--more{
+   display:none;
+}
+.main_Product .input__text__class:checked ~ .bot--parameter--submore2{
+   display:flex;
+}
+.main_Product .input__text__class:checked ~ .bot--content--more{
+   display: block;
+}
+.main_Product .input__text__class:checked ~ .bot--parameter--submore1{
+   display:none;
+}
+
 .main_Product .bot--parameter--more > p{
    position: relative;
     padding: 10px 118px;
@@ -205,6 +224,7 @@
     background-color: #fff;
     box-shadow: 0 0 3px #ccc;
     border-radius: 4px;
+    max-height: 430px;
 }
 
 .main_Product .bot--parameter--name{
