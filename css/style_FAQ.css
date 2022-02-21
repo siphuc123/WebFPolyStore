@@ -1,7 +1,10 @@
 .boxcenter{
    width: 100%;
    background-color: #eff1f5;
-   padding: 24px 0;
+   padding: 24px 0 0;
+}
+.padding--bot{
+   padding-bottom: 32px;
 }
 .chatbox{
    width: 60px;

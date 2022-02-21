@@ -58,10 +58,7 @@ html{
      font-family: fantasy;
      letter-spacing: 3px;
 }
-.header__a{
-     color: #000;
-     text-decoration: none;
-}
+
 /* khung chứa thanh tìm kiếm và icon kính */
 .header .header-input{
      margin:0px 100px;
@@ -436,6 +433,7 @@ html{
 .Product-img{
      padding: 10px;
      width: 100%;
+     transition: all 0.3 linear;
 }
 .Product-name{
      display: block;
@@ -503,8 +501,7 @@ html{
      color: #fff;
      font-weight: 400;
      font-size: 13px;
-     border-top-right-radius: 3px;
-     border-bottom-right-radius: 3px;
+     border-radius: 4px;
 }
 .Product-sale .warning{
      background-color: #ea9d02;
@@ -518,29 +515,48 @@ html{
      display: inline-block;
      line-height: 24px;
 }
+.Product-love{
+     position: absolute;
+     top: 40%;
+     right: 20px;
+     display: none;
+}
+.Product-love a{
+     text-decoration: none;
+}
+.Product-love .Product-love-icon{
+     font-size: 30px;
+     color: #aaa;
+     padding: 4px;
+     transition: all 0.3s linear;
+}
 /* hover sản phẩm */
 .Product:hover{
      box-shadow: 0 0 3px rgba(0,0,0,0.5);
 }
 .Product:hover .Product-img{
      cursor: pointer;
-     animation: dipup linear .8s;
+     transform:translateY(-15px);
+     transition: 600ms;
 }
 .Product:hover .Product-name{
      color: #0168fa;
 }
-@keyframes dipup {
-     0% {
-          transform:translateY(0);
+.Product:hover .Product-love{
+     display: block;
+     animation: love linear .7s;
+}
+.Product .Product-love-icon:hover{
+     color: var(--text-color);
+}
+@keyframes  love{
+     from {
+          opacity: 0;
      }
-     50%{
-          transform:translateY(-10px);
-     }
-     100%{
-          transform:translateY(0);
+     to{
+          opacity: 1;
      }
 }
-
 
 /* ----------------Khung gaming---------------- */
 .container-background-gaming{

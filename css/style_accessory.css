@@ -7,6 +7,35 @@
    width: 85%;
    margin: 0 auto;
 }
+.margin__bot__favourite{
+   margin-bottom:32px;
+}
+.accessory__main .favourite__box__heading{
+   display:flex;
+   align-items:center;
+   justify-content:center;
+}
+.accessory__main .favourite__heading{
+   text-align: center;
+   display: inline-block;
+   font-size: 32px;
+   margin: 28px 0;
+   padding-bottom: 8px;
+   text-transform: uppercase;
+   color: var(--text-color);
+   position: relative;
+}
+.accessory__main .favourite__heading::after{
+   content: "";
+   position: absolute;
+   bottom: 0;
+   left: 50%;
+   transform: translateX(-50%);
+   height: 3px;
+   width: 70%;
+   background-color: var(--text-color);
+}
+
 .accessory__main .heading{
    width: 100%;
    display: flex;

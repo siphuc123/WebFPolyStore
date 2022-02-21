@@ -24,89 +24,103 @@
 
 <body>
    <a name="TOP"></a>
-   <!-- Begin header -->
-   <div class="header">
-      <a href="index.html">
-         <div class="header-logo">
-               <h2 class="logo-name">FPoly<span class="logo-subname black">Store</span class=""></h2>
-         </div></a>
-      <div class="header-input">
-         <input class="input" type="text" placeholder="Tìm kiếm sản phẩm...">
-         <a class="search" href="#"><i class='bx bx-search'></i></a>
-      </div>
-      <div class="header-shop">
-         <a href="" class="heart icon"><i class='bx bx-heart'></i></a>
-         <a href="cart.html" class="cart icon"><i class='bx bx-cart-alt'></i></a>
-      </div>
-   </div>
-   <!-- End header -->
+     
+     <!-- <div class="header-more">
+          <div class="header-more__left">
+               <div class="header-more__left--icon"><i class='bx bxs-map'></i><span class='header-more__left--text'>không thông tin</span></div>
+               <div class="header-more__left--icon"><i class='bx bxs-phone'></i><span class='header-more__left--text'>chưa có thông</span></div>
+               <div class="header-more__left--icon"><i class='bx bx-time'></i><span class='header-more__left--text'>không thông tin</span></div>
+          </div>
+          <div class="header-more__right">
+               <div class="header-more__right--nati"><i class='bx bx-globe' ></i></div>
+               
+          </div>
+     </div> -->
+     <!-- Begin header -->
+          <div class="header">
+               <a style="text-decoration: none;" href="index.html">
+               <div class="header-logo">
+                    <h2  class="logo-name">FPoly<span class="logo-subname black">Store</span class=""></h2>
+               </div></a>
+               <div class="header-input">
+                    <input class="input" type="text" placeholder="Tìm kiếm sản phẩm...">
+                    <a class="search" href="#"><i class='bx bx-search'></i></a>
+               </div>
+               <div class="header-shop">
+                    <a href="favourite.html" class="heart icon"><i class='bx bx-heart'></i></a>
+                    <a href="cart.html" class="cart icon"><i class='bx bx-cart-alt'></i></a>
+               </div>
+          </div>
+          <!-- End header -->
 
-   <!-- Begin menu -->
-   <div class="menu">
-      <ul class="nav">
-         <li><a href="index.html"><i class='bx bxs-home'></i> Trang chủ</a></li>
-         <li><a href="accessory.html">
-               <i class='bx bxs-mouse'></i>
-               Phụ kiện
-               <i class='bx bx-caret-down'></i>
-            </a>
-            <ul class="subnav">
-               <li><a href="accessory.html">Chuột, bàn phím</a></li>
-               <li><a href="accessory.html">Thiết bị mạng</a></li>
-               <li><a href="accessory.html">Camera, Webcam</a></li>
-               <li><a href="accessory.html">Balo, túi chống sóc</a></li>
-               <li><a href="accessory.html">Phần mềm</a></li>
-            </ul>
-         </li>
-         <li><a href=""><label for="modal-input"><i class='bx bxs-phone-call'></i> Liên hệ</label></a></li>
-         <li><a href="AboutUs.html"><i class='bx bx-street-view'></i> About us</a></li>
-         <li><a href="FAQ.html"><i class='bx bxs-chat'></i> FAQs</a></li>
-      </ul>
-   </div>
-   <!-- End menu -->
+          <!-- Begin menu -->
+          <div class="menu">
+               <ul class="nav">
+                    <li><a href="index.html"><i class='bx bxs-home'></i> Trang chủ</a></li>
+                    <li><a href="accessory.html">
+                              <i class='bx bxs-mouse'></i>
+                              Phụ kiện
+                              <i class='bx bx-caret-down'></i>
+                         </a>
+                         <ul class="subnav">
+                              <li><a href="accessory.html">Chuột, bàn phím</a></li>
+                              <li><a href="accessory.html">Thiết bị mạng</a></li>
+                              <li><a href="accessory.html">Camera, Webcam</a></li>
+                              <li><a href="accessory.html">Balo, túi chống sóc</a></li>
+                              <li><a href="accessory.html">Phần mềm</a></li>
+                         </ul>
+                    </li>
+                    <li><a href=""><label for="modal-input"><i class='bx bxs-phone-call'></i> Liên hệ</label></a></li>
+                    <li><a href="AboutUs.html"><i class='bx bx-street-view'></i> About us</a></li>
+                    <li><a href="FAQ.html"><i class='bx bxs-chat'></i> FAQs </a></li>
+               </ul>
+          </div>
+          <!-- End menu -->
 
-   <!--  begin liên hệ -->
-   <input type="checkbox" name="" hidden class="modal-input" id="modal-input">
-   <label for="modal-input" class="modal">
-      <label for="modal-input" class="modal__container">
-         <label for="modal-input" class="close"><i class='bx bx-x'></i></label>
-         <h3 class="title-modal">
-            <i class='title-modal-icon bx bxs-phone-call'></i>
-            Liên hệ
-         </h3>
-         <form class="modal-content">
-            <div class="margin">
-               <label class="modal-label" for="name">
-                  Họ và tên
-                  <input class="modal-input" required type="text" placeholder="Nhập tên đầy đủ..." name="" id="name">
-               </label>
-            </div class="margin">
-            <div class="margin">
-               <label class="modal-label" for="call">
-                  Điện thoại
-                  <input class="modal-input" required min="0" max="9" type="number" placeholder="Nhập số điện thoại..."
-                     name="" id="call">
-               </label>
-            </div>
-            <div class="margin">
-               <label class="modal-label" for="mail">
-                  Email
-                  <input class="modal-input" required type="text" placeholder="Nhập email..." name="" id="mail">
-               </label class="modal-label">
-            </div>
-            <div class="margin">
-               <label class="modal-label" for="note">
-                  Nội dung
-                  <textarea class="modal-input" required placeholder="Nhập nội dung liên hệ..." name="" id="note"
-                     cols="30" rows="6"></textarea>
-               </label>
-            </div>
-            <button class="modal-button">Gửi đi</button>
-         </form>
-      </label>
-      </form>
-   </label>
-   <!--  end liên hệ -->
+     <!--  begin liên hệ -->
+     <input type="checkbox" name="" hidden class="modal-input" id="modal-input">
+     <label for="modal-input" class="modal">
+          <div class="modal__container">
+               <label for="modal-input" class="close"><i class='bx bx-x'></i></label>
+               <h3 class="title-modal">
+                    <i class='title-modal-icon bx bxs-phone-call'></i>
+                    Liên hệ
+               </h3>
+               <form class="modal-content">
+                    <div class="margin">
+                         <label class="modal-label" for="name">
+                              Họ và tên
+                              <input class="modal-input" required type="text" placeholder="Nhập tên đầy đủ..." name=""
+                                   id="name">
+                         </label>
+                    </div class="margin">
+                    <div class="margin">
+                         <label class="modal-label" for="call">
+                              Điện thoại
+                              <input class="modal-input" required min="0" max="9" type="number"
+                                   placeholder="Nhập số điện thoại..." name="" id="call">
+                         </label>
+                    </div>
+                    <div class="margin">
+                         <label class="modal-label" for="mail">
+                              Email
+                              <input class="modal-input" required type="text" placeholder="Nhập email..." name=""
+                                   id="mail">
+                         </label class="modal-label">
+                    </div>
+                    <div class="margin">
+                         <label class="modal-label" for="note">
+                              Nội dung
+                              <textarea class="modal-input" required placeholder="Nhập nội dung liên hệ..." name=""
+                                   id="note" cols="30" rows="6"></textarea>
+                         </label>
+                    </div>
+                    <button class="modal-button">Gửi đi</button>
+               </form>
+          </div>
+          </form>
+     </label>
+     <!--  end liên hệ -->
 
    <!--  begin accessory-->
    <div class="accessory__main">
