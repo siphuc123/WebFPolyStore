@@ -232,6 +232,7 @@
 }
 
 .main_Product table{
+   width: 100%;
    font-size: 14px;
    color: #333;
    border-collapse: collapse;
