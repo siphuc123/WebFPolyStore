@@ -114,18 +114,10 @@ html{
      line-height: 68px;
      transform: translateX(-18px);
 }
-/* .header-shop .cart:hover ~ .header-shop-text,
-.header-shop .icon:hover{
-     color: var(--text-color);
-     
-} */
+
+.header-shop .heart:hover,
 .header-shop .cart:hover {
-     text-shadow: -3px -4px 6px blue;
-     color: royalblue;
-}
-.header-shop .heart:hover {
-     text-shadow: 3px 4px 6px red;
-     color:#cb1c22;
+     color: var(--text-color);
 }
 /* ----------------menu(nav)---------------- */
 /* thẻ ul */
@@ -160,6 +152,7 @@ html{
 .nav li:hover .subnav{
      display: block;
 }
+.nav .call:hover,
 .nav > li:hover > a,
 .nav .subnav li:hover a{
      color: #000;
@@ -188,6 +181,16 @@ html{
      line-height:40px;
      font-size:13pt;
      margin: 4px 4px;
+}
+.nav .call{
+     font-size: 13pt;
+     color: #fff;
+     text-transform: uppercase;
+     text-decoration: none;
+     line-height: 60px;
+     padding: 0px 32px;
+     display: block;
+     transition: all linear .2s;
 }
 @keyframes navFaceIn {
      from{
