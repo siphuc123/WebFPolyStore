@@ -177,6 +177,7 @@ html{
      min-width: 218px;
      border-radius: 5px;
      animation: navFaceIn linear .25s;
+     z-index: 99;
 }
 .nav .subnav li{
      text-align: left;
