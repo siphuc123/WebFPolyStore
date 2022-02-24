@@ -1,0 +1,281 @@
+
+:root{
+   --text-color:#cd1817;
+   --text-background:#eaeaea;
+
+}
+.main_Product{
+   box-shadow: 0 0 3px #ccc;
+}
+.main_Product .container__Product{
+   width: 85%;
+   margin: 0 auto;
+}
+.main_Product .Product__heading{
+   padding: 12px 0px;
+   margin-bottom: 12px;
+   border-bottom: 1px solid #ccc;
+   font-size: 23px;
+}
+.main_Product .container__top{
+   display: flex;
+   justify-content: space-between;
+}
+.main_Product  .buy--Price--text{
+   display: inline-block;
+   padding-right: 16px;
+   font-size: 28px;
+   color: var(--text-color)
+}
+.main_Product .container__top__buy--price del{
+   color: gray;
+   font-size: 21px;
+}
+
+/* --------------ảnh sản phẩm------------ */
+.main_Product .container__top__img{
+   width: calc(50% - 16px);
+   text-align: center;
+}
+.main_Product .container__top__img img{
+   width: 100%;
+}
+.main_Product .container__top__img_mouse img{
+   max-width: 330px;
+}
+
+.main_Product .container__top__list{
+   display: flex;
+    justify-content: center;
+    color: #333;
+}
+.main_Product .container__top__item{
+   text-align: center;
+   padding: 12px 24px 24px;
+   cursor: pointer;
+}
+.main_Product .container__top__icon{
+   font-size: 42px;
+   transition: all linear .3s;
+}
+.main_Product .container__top__item > p{
+   transition: all linear .3s;
+}
+.main_Product .container__top__item:hover > .container__top__icon{
+   color: #0664f9;
+}
+.main_Product .container__top__item:hover > p{
+   color: #0664f9;
+}
+
+
+/* --------------checkbox------------ */
+.main_Product .container__top__buy{
+   width: calc(50% - 16px);
+} 
+.main_Product .container__top__buy--input{
+   background-color: #eee;
+   border-radius: 3px;
+   border: 1px solid #ccc;
+   margin-top: 12px;
+}
+.main_Product .buy--input--name{
+   padding: 8px 12px;
+   border-bottom: 1px solid #ccc;
+}
+.main_Product .buy--input{
+   padding: 8px 12px 6px;
+   display: block;
+   cursor: pointer;
+}
+.main_Product .buy--input--subname{
+   border-top: 1px solid #ccc;
+}
+.main_Product .buy--input--subname-heading{
+   display: inline-block;
+    background-color: #ccc;
+    padding: 4px 8px;
+    border-bottom-right-radius: 4px;
+}
+.main_Product .buy--input--subname > p{
+   padding: 4px 8px;
+}
+.main_Product .buy--input--subname--icon{
+   color: #48bb78;
+}
+
+/* --------------buy------------ */
+.main_Product .container__top__buy--buy{
+   text-align: center;
+    margin-top: 28px;
+}
+.main_Product .butfirst{
+ 
+}
+.main_Product .butsecond{
+   display: flex;
+    justify-content: space-between;
+    margin-top: 8px;
+}
+.main_Product .button{
+   width: 100%;
+    border-radius: 5px;
+    line-height: 18px;
+    padding: 8px;
+    color: #fff;
+    font-size: 14px;
+    background-color: var(--text-color);
+    transition: all linear .2s;
+}
+.main_Product .button__blue{
+   width: calc(50% - 4px);
+   background-color: #0664f9;
+}
+.main_Product .button__heading{
+   text-transform: uppercase;
+}
+.main_Product .button:hover{
+   opacity: .5;
+   cursor: pointer;
+}
+/* --------------content------------ */
+.main_Product .container__bot--background{
+   background-color: var(--text-background);
+}
+.main_Product .container__bot{
+   width: 85%;
+   margin: 0 auto;
+   display: flex;
+   justify-content: space-between;
+   padding: 32px 0;
+}
+/* ----------thông tin sản phẩm---------- */
+.main_Product .container__bot--content{
+   width: calc(60% - 16px);
+   padding: 16px 16px 12px;
+   background-color: #fff;
+   box-shadow: 0 0 3px #ccc;
+   border-radius: 4px;
+}
+
+.main_Product .bot--content--text{
+   text-align: justify;
+    font-weight: 500;
+    padding: 0px 0px 8px;
+    line-height: 1.4;
+}
+
+.main_Product .bot--content--subtext{
+   text-align: justify;
+   padding: 0 0 8px;
+    line-height: 1.4;
+}
+.main_Product .bot--content--img{
+   width: 100%;
+   padding: 12px 0;
+}
+.main_Product .bot--parameter--more{
+   font-size: 14px;
+   color: blue;
+   padding: 12px 12px 0;
+   display: flex;
+   justify-content: center;
+   cursor: pointer;
+   z-index: 4;
+}
+
+.main_Product .bot--parameter--submore2,
+.main_Product .bot--content--more{
+   display:none;
+}
+.main_Product .input__text__class:checked ~ .bot--parameter--submore2{
+   display:flex;
+}
+.main_Product .input__text__class:checked ~ .bot--content--more{
+   display: block;
+}
+.main_Product .input__text__class:checked ~ .bot--parameter--submore1{
+   display:none;
+}
+
+.main_Product .bot--parameter--more > p{
+   position: relative;
+    padding: 10px 118px;
+    border: 1px solid blue;
+    border-radius: 6px;
+   transition: all linear .4s;
+
+}
+
+.main_Product .bot--parameter--more:hover > p{
+   color: #fff;
+   background-color: #0664f9;
+   border-radius: 20px;
+   border: 1px solid #0664f9;
+}
+
+.main_Product .bot--parameter--name--icon{
+   font-size: 10px;
+}
+/* ----------thông số kĩ thuật---------- */
+.main_Product .container__bot--parameter{
+   width: calc(40% - 16px);
+    padding: 16px 16px 12px;
+    background-color: #fff;
+    box-shadow: 0 0 3px #ccc;
+    border-radius: 4px;
+    max-height: 430px;
+}
+
+.main_Product .bot--parameter--name{
+   padding-bottom: 12px;
+}
+
+.main_Product table{
+   width: 100%;
+   font-size: 14px;
+   color: #333;
+   border-collapse: collapse;
+}
+.main_Product tr{
+   line-height: 28px;
+}
+.main_Product tr:nth-child(2n+1){
+   background-color: #f3f4f7;
+}
+.main_Product tr td{
+   padding: 0 8px;
+}
+.main_Product tr td:first-child{
+   min-width: 132px;
+}
+.main_Product .bot--parameter--name--more{
+   font-size: 14px;
+   color: blue;
+   padding: 12px 12px 0;
+   display: flex;
+   justify-content: center;
+   cursor: pointer;
+}
+.main_Product .bot--parameter--name--more > p{
+   position: relative;
+   padding-bottom: 2px;
+}
+.main_Product .bot--parameter--name--more > p::after{
+   content: "";
+   position: absolute;
+   bottom: 0;
+   left: 50%;
+   transform: translateX(-50%);
+   width: 0;
+   height: 1px;
+   background-color: blue;
+   transition: width .4s linear;
+}
+.main_Product .bot--parameter--name--more:hover > p::after{
+   width: 100%;
+}
+.main_Product .bot--parameter--name--icon{
+   font-size: 10px;
+}
+

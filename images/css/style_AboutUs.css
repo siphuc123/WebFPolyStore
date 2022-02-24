@@ -1,0 +1,87 @@
+:root{
+    --text-color:#cd1817;
+    --text-background:#eaeaea;
+ }
+
+div.gioiThieu{
+    min-height: 700px;
+    width: 100%;
+}
+
+div.banner>img {
+    width: 100%;
+    height: 350px;
+}
+.banner {
+    color: rgb(255, 255, 255);
+    line-height: 20px;
+}
+ /* Chữ ở giữa banner  */
+h1.bigWordTitle{
+    position: absolute;
+    left: 42%;
+    top: 38%;
+    font-size: 60px;
+    font-weight: 500;
+}
+.smallWordTitle {
+    position: absolute;
+    left: 37%;
+    top: 47%;
+    font-size: 25px;
+    font-weight: 400;
+    font-style: italic;
+}
+h1.bigWordTitle, .smallWordTitle {
+    opacity: 0.8;
+}
+h1:hover, .smallWordTitle:hover {
+    opacity: 1;
+    text-shadow: royalblue 10px 10px 10px;
+}
+ /* Nội dung chính  */
+div.gioiThieu {
+     padding: 64px 0;
+     margin-top: 100px;
+     display: flex;
+}
+p.noiDung {
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 80px;
+}
+.gtCongTy {
+    width: 60%;
+    margin: 0 auto;
+}
+/* Thanh gạch  */
+.thanhGach {
+    width: 21%;
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    border-bottom: 6px solid #ff0000;
+    margin: 10px 0;
+}
+.bocThanhGach,.tieuDe {
+    text-align: center;
+}
+ /* Bản đồ  */
+.map-container {
+    position: relative;
+    padding-bottom: 20%;
+    height: 0;
+    overflow: hidden;
+}
+.map-container > iframe {
+    position: absolute;
+    top: 0;
+    left: 35%;
+    width: 30%;
+    height: 90%;
+}
+.text-map { 
+   text-align: center;
+   font-size: 20px;
+   font-weight: bold;
+}

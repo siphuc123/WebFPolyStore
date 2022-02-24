@@ -1,0 +1,38 @@
+.favourite__main table{
+    width: 100%;
+    text-align: center;
+}
+
+.favourite__main table tr:first-child{
+    background-color: 
+    #f4f4f4;
+    color: #333;
+    line-height: 45px;
+    border-bottom: 2px solid #ccc;
+}
+.favourite__main table tr th:first-child{
+    width: 600px;
+}
+.favourite__main table tr td img {
+    width: 30%;
+    margin-left: 24px;
+}
+
+.favourite__main table tr td:first-child{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.favourite__main table tr td:nth-child(4) div{
+    display: inline-block;
+    background-color: red;
+    color: #fff;
+    padding: 8px 24px;
+    border-radius: 10px;
+    margin-top:8px;
+}
+.favourite__main table tr td:nth-child(4) div:hover{
+    opacity: 0.4;
+    transition: 300ms;
+    cursor: pointer;
+}

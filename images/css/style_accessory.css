@@ -1,0 +1,130 @@
+:root{
+   --text-color:#cd1817;
+   --text-background:#eaeaea;
+}
+/* ---------header--------- */
+.accessory__main{
+   width: 85%;
+   margin: 0 auto;
+}
+.margin__bot__favourite{
+   margin-bottom:32px;
+}
+.accessory__main .favourite__box__heading{
+   display:flex;
+   align-items:center;
+   justify-content:center;
+}
+.accessory__main .favourite__heading{
+   text-align: center;
+   display: inline-block;
+   font-size: 32px;
+   margin: 54px 0;
+   padding-bottom: 8px;
+   text-transform: uppercase;
+   color: var(--text-color);
+   position: relative;
+}
+.accessory__main .favourite__heading::after{
+   content: "";
+   position: absolute;
+   bottom: 0;
+   left: 50%;
+   transform: translateX(-50%);
+   height: 3px;
+   width: 70%;
+   background-color: var(--text-color);
+}
+
+.accessory__main .heading{
+   width: 100%;
+   display: flex;
+   justify-content: space-between;
+   padding: 8px 0
+}
+.accessory__main .heading__left{
+   width: calc(67% - 8px);
+}
+.accessory__main .heading__left > img{
+   width: 100%;
+   height: 100%;
+}
+.accessory__main .heading__right{
+   width: 33%;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+}
+.accessory__main .heading__right > img{
+   width: 100%;
+}
+/* ---------Danh mục--------- */
+.accessory__main .menu__top--background{
+   background-color: #fff;
+   margin-bottom: 0;
+   position: unset;
+   margin: 12px 0 48px;
+}
+.accessory__main .acs__list{
+   justify-content: start;
+   width: 100%;
+}
+.accessory__main .acs__list__item{
+   padding: 0px 0;
+   min-width: 140px;
+}
+.accessory__main .acs__list__item--icon{
+   transition: all linear .3s;
+}
+.accessory__main .acs__list__item--icon .item-icon{
+   color: #000;
+   transition: all linear .1s;
+}
+.accessory__main .acs__list__item > p{
+   transition: all linear .3s;
+   color: #000;
+}
+.accessory__main .acs__list__item:hover .acs__list__item--icon{
+   background-color:#f1f1f1;
+   border: 1px solid #0664f9;
+}
+.accessory__main .acs__list__item:hover .item-icon{
+   font-size: 40px;
+   height: 40px;
+}
+.accessory__main .acs__list__item:hover p{
+   color: #0664f9;
+}
+/* ---------san pham phu--------- */
+.accessory__main .acs__container{
+   width: 100%;
+   background-color: #fff;
+}
+.accessory__main .acs__Products{
+   justify-content: space-between;
+}
+.accessory__main .acs__Product{
+   width: 20%;
+   border: 1px solid #cac9c9;
+}
+.accessory__main .acs__Product:hover{
+   box-shadow: 0 0 10px #aaaaaa;
+   z-index: 5;
+}
+.accessory__main .acs__Product--img{
+   padding: 40px 0;
+}
+.accessory__main .acs__more--text{
+   border: 1px solid #999;
+   font-size: 15px;
+   text-transform: inherit;
+   padding: 8px 80px;
+   transition: all cubic-bezier(0.165, 0.84, 0.44, 1) 1s;
+}
+
+.accessory__main .acs__more--text:hover{
+   color: #fff;
+   background-color:#0664f9;
+   border-radius: 20px;
+   border: 1px solid #0664f9;
+}

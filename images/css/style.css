@@ -1,0 +1,814 @@
+/* reset css */
+*{
+     margin: 0px;
+     border: 0px;
+     box-sizing: border-box;
+}
+ /* import font */
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap'); */
+ /*cài font và size cho cả bài */
+html{
+     font-family: 'Fira Sans', sans-serif;
+     /* background-color:#f5f5f5; */
+     scroll-behavior: smooth;
+     
+}
+/* (Lớp giả) đỗi màu chung*/
+:root{
+     --text-color:#cd1817;
+     --text-background:#eaeaea;
+}
+.black{
+     color: #000 !important;
+}
+.while{
+     color: #fff !important;
+}
+
+
+/* --------------header thêm-------------- */
+/* .header-more{
+
+}
+.header-more__left{
+
+}
+.header-more__right{
+
+} */
+/* --------------header-------------- */
+.header-menu{
+     background-color: #fff;
+     z-index: 1;
+}
+ /* Khung chung gồm logo và tìm kiếm vỏ hàng */
+.header{
+     width:85%;
+     margin: 0 auto;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+}
+/* logo */
+.header-logo{
+     font-size: 26px;
+     line-height: 100px;
+     color: var(--text-color);
+     padding-right: 22px;
+     font-family: fantasy;
+     letter-spacing: 3px;
+}
+
+/* khung chứa thanh tìm kiếm và icon kính */
+.header .header-input{
+     margin:0px 100px;
+     display:flex;
+     align-items:center;
+     border: 2px solid var(--text-color);
+     border-radius:4px;
+}
+/* thanh tìm kiếm */
+.header .header-input .input{
+     min-width: 580px;
+     min-height: 40px;
+     color: #000;
+     border-radius:5px;
+     font-style: italic;
+     font-size:17px;
+     padding-left: 10px;
+     outline: none;
+}
+
+/* icon kính*/
+.header .search{
+     font-size: 30px;
+     background: var(--text-color);
+     padding: 6px 21px 0;
+     color:#fff;
+}
+
+.header-shop{
+     display: flex;
+}
+.header-shop .icon{
+     font-size: 30px;
+     color: #666;
+     text-decoration: none;
+     padding: 16px 22px;
+     transition: all 0.3s linear;
+}
+.header-shop .heart{
+     position: relative;
+}
+.header-shop .heart::before{
+     content: "";
+     position: absolute;
+     right: 0;
+     top: 47%;
+     transform: translateY(-50%);
+     border: 0.1px solid #666;
+     height: 44%;
+}
+.header-shop .header-shop-text{
+     color: #555;
+     line-height: 68px;
+     transform: translateX(-18px);
+}
+
+.header-shop .heart:hover,
+.header-shop .cart:hover {
+     color: var(--text-color);
+}
+/* ----------------menu(nav)---------------- */
+/* thẻ ul */
+.nav{
+     background-color:#000;
+     height: 60px;
+     text-align: center;
+}
+/* thẻ ulmenu lớn, menu con */
+.nav, .subnav{
+     list-style: none;
+     padding-left: 0;
+}
+.nav > li{
+     display: inline-block;
+}
+.nav li{
+     position: relative;
+}
+.nav > li > a{
+     text-transform: uppercase;
+     color: #fff;
+}
+.nav li a{
+     font-size: 13pt;
+     text-decoration: none;
+     line-height:60px;
+     padding: 0px 32px;
+     display: block;
+     transition: all linear .2s;
+}
+.nav li:hover .subnav{
+     display: block;
+}
+.nav .call:hover,
+.nav > li:hover > a,
+.nav .subnav li:hover a{
+     color: #000;
+     background-color:#ccc;
+     border-radius: 5px;
+}
+
+.nav .subnav{
+     position: absolute;
+     top: 100%;
+     left: 0;
+     background-color: #fff;
+     display: none;
+     box-shadow:0 0 10px rgba(0, 0, 0, 0.3);
+     min-width: 218px;
+     border-radius: 5px;
+     animation: navFaceIn linear .25s;
+     z-index: 99;
+}
+.nav .subnav li{
+     text-align: left;
+}
+.nav .subnav a{
+     color: #000;
+     padding: 0 26px;
+     line-height:40px;
+     font-size:13pt;
+     margin: 4px 4px;
+}
+.nav .call{
+     font-size: 13pt;
+     color: #fff;
+     text-transform: uppercase;
+     text-decoration: none;
+     line-height: 60px;
+     padding: 0px 32px;
+     display: block;
+     transition: all linear .2s;
+}
+@keyframes navFaceIn {
+     from{
+          opacity: 0;
+          transform: translateY(20px);
+     }
+     to{
+          opacity: 1;
+          transform: translateY(0);
+     }
+}
+/* ---------------liên hệ------------------ */
+.modal{
+     position: fixed;
+     top: 0;
+     right: 0;
+     left: 0;
+     bottom: 0;
+     background-color: rgba(0, 0, 0, 0.8);
+     z-index: 3;
+     display: none;
+}
+
+.modal__container{
+     background-color: #fff;
+     width: 50%;
+     border-radius: 10px;
+     z-index: 4;
+     position: absolute;
+     left: 50%;
+     top: 50%;
+     transform: translate(-50%,-50%);
+     animation: modalFaceIn ease 0.5s;
+}
+.modal .title-modal{
+     border-radius: 10px 10px 0 0;
+     width: 100%;
+     height: 130px;
+     background-color: var(--text-color);
+     color: #fff;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     font-size: 30px;
+     letter-spacing: 2px;
+     position: relative;
+}
+
+.title-modal-icon{
+     margin-right: 8px;
+}
+.modal .close{
+     position: absolute;
+     right: 0;
+     top: 0;
+     z-index: 4;
+     padding: 8px;
+     font-size: 28px;
+     color: #fff;
+}
+.modal-content{
+     max-width: 90%;
+     margin: 0 auto;
+     padding: 16px 0;
+}
+.modal-label{
+     font-size: 19px;
+     font-weight: 600;    
+     position: relative;
+}
+.modal-input{
+     width: 100%;
+     outline: none;
+     border: 1px solid #eee;
+     padding: 12px 0;
+     padding-left: 12px;
+     margin: 6px 0px;
+     border-radius: 10px;
+     font-style: italic;
+     background: #eee;
+     box-sizing: border-box;
+     transition: .3s linear;
+}
+.modal-input:focus{
+     background-color: #fff;
+     box-shadow: 0 0 20px #ccc;
+}
+.modal-button{
+     margin: 4px 0px 4px;
+     width: 100%;
+     line-height: 48px;
+     color: #fff;
+     font-size: 20px;
+     background-color: var(--text-color);
+     border-radius: 10px;
+}
+.modal-button:hover{
+     opacity: .7;
+}
+.margin{
+     margin: 16px 0;
+}
+.modal-input:checked ~ .modal,
+.modal-input:checked ~ .modal__container{
+     display: block;
+} 
+@keyframes modalFaceIn{
+     from{
+          opacity: 0;
+          transform: translate(-50%, -80%);
+     }
+     to{
+          opacity: 1;
+          transform: translate(-50%, -50%);
+     }
+}
+/* ----------------Banner---------------- */
+/* ảnh header  */
+.Banner img{
+     width: 100%;
+     display: block;
+}
+/* ----------------Hãng---------------- */
+ /*hãng(Nhà sản xuất) */
+.danhmuc {
+     width: 100%;
+     background-color: #080312;
+     min-height: 80px;
+     display:flex;
+     align-items: center;
+     justify-content: center;
+}
+.danhmuc__list {
+     width: 80%;
+     display:flex;
+     justify-content:space-between;
+}
+.danhmuc__item{
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     border-radius: 34px;
+     background-color: #fff;
+     height: 35px;
+     padding: 0 16px;
+}
+.danhmuc__item img {
+     height: 26px;
+}
+.danhmuc .danhmuc__item img:hover{
+     transform: scale(1.1);
+     transition: 250ms;
+     cursor: pointer;
+}
+
+/* ------------------------------- */
+.menu-top{
+     background-color: #222222;
+     width: 100%;
+     min-height:100px;
+     position: -webkit-sticky;
+     position: sticky;
+     top: 0;
+     z-index: 2;
+     margin-bottom: 30px;
+}
+.menu-top__list{
+     width:80%;
+     margin: 0 auto;
+     display:flex;
+     justify-content:space-around;
+     align-items:center;
+     padding-top: 10px;
+}
+.menu-top__list__item{
+     color: #fff;
+     line-height: 17px;
+     text-decoration: none;
+     padding: 0 72px;
+     font-size: 14px;
+     text-align: center;
+}
+.box-icon{
+     align-items: center;
+     border-radius: 50%;
+     display: flex;
+     justify-content: center;
+     height: 56px;
+     margin: 0 auto 6px;
+     width: 56px;
+     background-color: #f1f1f1;
+} 
+.item-icon{
+     font-size: 44px;
+    background-position: 0 0;
+    width: 45px;
+    height: 45px;
+    color: #01415b;
+}
+.menu-top__list__item > p{
+     font-size: 14px;
+     line-height: 120%;
+     white-space: nowrap;
+}
+.menu-top__list__item:hover .box-icon{
+     background-color: yellow;
+}
+.menu-top__list__item:active .box-icon{
+     background-color: yellow;
+}
+/* ----------------dùng chung content---------------- */
+.Products{
+     display: flex;
+     justify-content: space-evenly;
+
+}
+.Product{
+     width: 19%;
+     background-color:#fff;
+     transition: all 0.2s linear;
+}
+
+.container{
+     width: 90%;
+     margin-left: auto;
+     margin-right: auto;
+     background-color: yellow;
+     padding-bottom: 1px;
+}
+.container-heading{
+     text-align: center;
+     line-height: 80px;
+     font-size: 2rem;
+     font-weight: 700;
+     color: var(--text-color);
+}
+.Product-content{
+     background-color: #fff;
+     padding: 10px;
+     line-height:25px;
+     position: relative;
+     transition: 0.3 linear;
+}
+.Product-img{
+     padding: 10px;
+     width: 100%;
+     transition: all 0.3 linear;
+}
+.Product-name{
+     display: block;
+     margin-bottom: 8px;
+     text-decoration: none;
+     color: #666;
+     font-size: 16px;
+     font-weight: 600;
+     transition: all 0.3s linear;
+     min-height: 50px;
+}
+.Product-Memory{
+     display: inline-block;
+     border: 1px solid #ccc;
+     border-radius: 2px;
+     padding: 0 12px;
+     margin-bottom: 8px;
+}
+.Product-price{
+     background: var(--text-color);
+     font-weight: 500;
+     display: inline-block;
+     color: #fff;
+     padding: 0px 12px;
+     border-radius: 20px;
+     margin-bottom: 8px;
+}
+.Product-del{
+     float: right;
+}
+.Product-subcontent{
+     padding: 6px;
+     background-color: #f8f9fa;
+     border-radius: 5px;
+     color: #5d656b;
+     display: flex;
+     font-size: 13px;
+}
+.Product-P1{
+     padding-right: 12px;
+}
+.Product-buy{
+     width: 100%;
+     height: 34px;
+     text-align: center;
+     background: var(--text-color);
+     line-height: 24px;
+     border-radius: 4px;
+     font-size: 18px;
+     font-weight: 600;
+     color: #fff;
+     margin-top: 8px;
+     text-transform: uppercase;
+     display: none;
+}
+.Product-sale{
+     display: flex;
+     flex-direction: column;
+     position:absolute;
+     left: 8px;
+     top: 162px;
+}
+.Product-sale .sale{
+     padding: 0px 12px;
+     color: #fff;
+     font-weight: 400;
+     font-size: 13px;
+     border-radius: 4px;
+}
+.Product-sale .warning{
+     background-color: #ea9d02;
+     display: inline-block;
+     max-width: 100px;
+     line-height: 24px;
+}
+.Product-sale .primary{
+     margin-top: 4px;
+     background-color: #cb1c22;
+     display: inline-block;
+     line-height: 24px;
+}
+.Product-love{
+     position: absolute;
+     top: 40%;
+     right: 20px;
+     display: none;
+}
+.Product-love a{
+     text-decoration: none;
+}
+.Product-love .Product-love-icon{
+     font-size: 30px;
+     color: #aaa;
+     padding: 4px;
+     transition: all 0.3s linear;
+}
+/* hover sản phẩm */
+.Product:hover{
+     box-shadow: 0 0 3px rgba(0,0,0,0.5);
+}
+.Product:hover .Product-img{
+     cursor: pointer;
+     transform:translateY(-15px);
+     transition: 600ms;
+}
+.Product:hover .Product-name{
+     color: #0168fa;
+}
+.Product:hover .Product-love{
+     display: block;
+     animation: love linear .7s;
+}
+.Product .Product-love-icon:hover{
+     color: var(--text-color);
+}
+@keyframes  love{
+     from {
+          opacity: 0;
+     }
+     to{
+          opacity: 1;
+     }
+}
+
+/* ----------------Khung gaming---------------- */
+.container-background-gaming{
+     background-color: #25304b!important;
+     margin-top:80px;
+}
+.container-size-gaming{
+     background-color: #25304b!important;
+}
+.container-background-gaming .more-text-gaming{
+     background-color: #fec100;
+     box-shadow: 0 0 10px #fec100;
+     color: #25304b;
+}
+.more-text-gaming {
+     background-color: #fff;
+     padding: 8px 72px;
+     font-size: 16px;
+     text-transform: uppercase;
+     border-radius: 4px;
+}
+.more-text-gaming:hover{
+     color: #fec100;
+     background-color:#25304b;
+     border-radius: 20px;
+     border: 1px solid #0664f9;
+     transition: all 0.6s linear;
+     text-shadow: 0px 0px 8px #fec100;
+}
+/* ----------------khung mac ,học tập, mỏng nhẹ,sang trọng---------------- */
+.container-background{
+     width: 100%;
+     background-color: var(--text-background);
+}
+.container-size{
+     background-color:var(--text-background);
+}
+.container-heading img{
+     width: 98.5%;
+     margin-left: auto;
+     margin-right: auto;
+}
+.container-heading-size{
+     line-height:40px;
+}
+.Products-size{
+     margin-bottom: 10px;
+}
+
+.Products-more-text{
+     text-align: center;
+     display: block;
+     padding: 30px 40px 80px;
+}
+.more-text{
+     background-color: #fff;
+     padding: 8px 72px;
+     font-size: 16px;
+     text-transform: uppercase;
+     border-radius: 4px;
+}
+.more-text:hover{
+     color: #fff;
+     background-color:black;
+     border-radius: 20px;
+     border: 1px solid #0664f9;
+     transition: all 0.3s linear;
+}
+del{
+     color: gray;
+     font-size: 0.9rem;
+}
+.Products-more,
+.Products-more-first,
+.Products-more-second,
+.Products-more-third,
+.Products-more-gaming{
+     display: none;
+}
+
+.Products-input:checked ~ .Products-more,
+.Products-input-first:checked ~ .Products-more-first,
+.Products-input-second:checked ~ .Products-more-second,
+.Products-input-third:checked ~ .Products-more-third,
+.Products-input-gaming:checked ~ .Products-more-gaming{
+     display: block;
+}
+
+.Products-input:checked ~ .Products-more-text,
+.Products-input-first:checked ~ .Products-more-text,
+.Products-input-second:checked ~ .Products-more-text,
+.Products-input-third:checked ~ .Products-more-text,
+.Products-input-gaming:checked ~ .Products-more-text{
+     animation: fadeout linear 0s forwards;
+}
+@keyframes fadeout{
+     to { 
+          opacity: 0;
+     }
+}
+/* ----------------Khung dịch vụ---------------- */
+/* dich vu */
+.boxghichu{
+     width: 80%;
+     margin: 0px auto;
+     text-align: center;
+}
+/* khung dich vu */
+.boxghichu .ghichu{
+     width: 33%;
+     min-height:9px;
+     line-height: 25px;
+     padding: 50px 25px;
+     display: inline-block;
+}
+/* icon  */
+.boxghichu .ghichu .icon{
+     font-size: 40pt;
+     color: gray;
+}
+
+/* điều chỉnh icon to the top */
+.lenDauTrang {
+     position: fixed;
+     width: 40px;
+     height: 40px;
+     background: var(--text-color);
+     bottom: 20px;
+     right: 15px;
+     text-align: center;
+     border-radius: 40px;
+     line-height: 45px;
+     font-size: 30px;
+     color: white;
+     z-index: 5;
+}
+
+/* ----------------footer---------------- */
+footer{
+     font-size: 20px;
+     background-color: #212121;
+     /* background-color:#fafafa; */
+}
+
+.footer-content{
+     display: flex;
+     justify-content: space-between;
+     padding: 50px 150px 50px;
+     color:#fff;
+}
+
+.logo-name-line-height{
+     line-height: 44px;
+}
+
+.footer-content .logo-text{
+     color: #fff;
+     font-size: 18px;
+     line-height: 52px;
+     text-align: center;
+     font-weight: 500;
+     font-family:'Fira Sans', sans-serif;
+     letter-spacing: 2px;
+}
+
+.logo-img{
+     display: flex;
+     justify-content:space-between;
+}
+
+.logo-img-item{
+     max-width: 20px;
+     color: #fff;
+}
+
+.logo-img-item:hover{
+     transform: translateY(-6px) ;
+     transition: 250ms;
+     cursor: pointer;
+}
+
+.footer-link{
+     display: flex;
+     flex-direction: column;
+     width: 240px;
+}
+.link-heading{  
+     font-size: 20px;
+     text-transform: uppercase;
+     margin-bottom: 12px;
+     font-weight:500;
+     padding-bottom: 10px;
+     position: relative;
+}
+.link-heading::after{
+     content: "";
+     position: absolute;
+     left: 0;
+     bottom: 0;
+     width: 100%;
+     height: .1px;
+     background-color:#ccc;
+}
+.footer-link a{ 
+     text-decoration: none;
+     color: #ccc;
+     width:auto;
+     font-size: 16px;
+     line-height: 34px;
+     position: relative;
+     padding-bottom: 4px;
+     transition: all linear .2s;
+}
+
+.footer-end{
+     width: 260px;
+    display: flex;
+    flex-direction: column;
+}
+.end-heading{
+     display: flex;
+     align-items: center;
+     padding: 4px 0;
+}
+.end-heading-text{
+     line-height: 34px;
+     font-size:16px
+}
+.end-icon{
+     color: var(--text-color);
+     width: 44px;
+     font-size: 28px;
+}
+.end-text{
+     font-size: 18px;
+     max-width: 165px;
+     line-height: 22px;
+}
+
+.footer-heading-end{
+     background-color: #000;
+     color: #ccc;
+     min-height: 50px;
+     text-align: center;
+     line-height: 50px;
+     letter-spacing: 2px;
+     font-size: 18px;
+}
+.footer-content a:hover{
+     color: var(--text-color);
+}

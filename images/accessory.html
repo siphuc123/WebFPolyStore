@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <!-- ICON -->
+   <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+   <!-- LOGO -->
+   <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+   <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+   <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+   <link rel="manifest" href="images/site.webmanifest">
+   <link rel="icon" href="http://www.yoursite.com/favicon.ico?v=2" />
+   <meta name="msapplication-TileColor" content="#ffffff">
+   <meta name="msapplication-TileImage" content="images//ms-icon-144x144.png">
+   <meta name="theme-color" content="#ffffff">
+   <!-- CSS -->
+   <link rel="stylesheet" href="css/style.css">
+   <link rel="stylesheet" href="css/style_accessory.css">
+   <title> FPolyStore </title>
+</head>
+
+<body>
+   <a name="TOP"></a>
+     
+     <!-- <div class="header-more">
+          <div class="header-more__left">
+               <div class="header-more__left--icon"><i class='bx bxs-map'></i><span class='header-more__left--text'>không thông tin</span></div>
+               <div class="header-more__left--icon"><i class='bx bxs-phone'></i><span class='header-more__left--text'>chưa có thông</span></div>
+               <div class="header-more__left--icon"><i class='bx bx-time'></i><span class='header-more__left--text'>không thông tin</span></div>
+          </div>
+          <div class="header-more__right">
+               <div class="header-more__right--nati"><i class='bx bx-globe' ></i></div>
+               
+          </div>
+     </div> -->
+     <!-- Begin header -->
+          <div class="header">
+               <a style="text-decoration: none;" href="index.html">
+               <div class="header-logo">
+                    <h2  class="logo-name">FPoly<span class="logo-subname black">Store</span class=""></h2>
+               </div></a>
+               <div class="header-input">
+                    <input class="input" type="text" placeholder="Tìm kiếm sản phẩm...">
+                    <a class="search" href="#"><i class='bx bx-search'></i></a>
+               </div>
+               <div class="header-shop">
+                    <a href="favourite.html" class="heart icon"><i class='bx bx-heart'></i></a>
+                    <a href="cart.html" class="cart icon"><i class='bx bx-cart-alt'></i></a>
+               </div>
+          </div>
+          <!-- End header -->
+
+          <!-- Begin menu -->
+          <div class="menu">
+               <ul class="nav">
+                    <li><a href="index.html"><i class='bx bxs-home'></i> Trang chủ</a></li>
+                    <li><a href="accessory.html">
+                              <i class='bx bxs-mouse'></i>
+                              Phụ kiện
+                              <i class='bx bx-caret-down'></i>
+                         </a>
+                         <ul class="subnav">
+                              <li><a href="accessory.html">Chuột, bàn phím</a></li>
+                              <li><a href="accessory.html">Thiết bị mạng</a></li>
+                              <li><a href="accessory.html">Camera, Webcam</a></li>
+                              <li><a href="accessory.html">Balo, túi chống sóc</a></li>
+                              <li><a href="accessory.html">Phần mềm</a></li>
+                         </ul>
+                    </li>
+                    <li><label class="call" for="modal-input"><i class='bx bxs-phone-call'></i> Liên hệ</label></li>                    <li><a href="AboutUs.html"><i class='bx bx-street-view'></i> About us</a></li>
+                    <li><a href="FAQ.html"><i class='bx bxs-chat'></i> FAQs </a></li>
+               </ul>
+          </div>
+          <!-- End menu -->
+
+     <!--  begin liên hệ -->
+     <input type="checkbox" name="" hidden class="modal-input" id="modal-input">
+     <label for="modal-input" class="modal">
+          <div class="modal__container">
+               <label for="modal-input" class="close"><i class='bx bx-x'></i></label>
+               <h3 class="title-modal">
+                    <i class='title-modal-icon bx bxs-phone-call'></i>
+                    Liên hệ
+               </h3>
+               <form class="modal-content">
+                    <div class="margin">
+                         <label class="modal-label" for="name">
+                              Họ và tên
+                              <input class="modal-input" required type="text" placeholder="Nhập tên đầy đủ..." name=""
+                                   id="name">
+                         </label>
+                    </div class="margin">
+                    <div class="margin">
+                         <label class="modal-label" for="call">
+                              Điện thoại
+                              <input class="modal-input" required min="0" max="9" type="number"
+                                   placeholder="Nhập số điện thoại..." name="" id="call">
+                         </label>
+                    </div>
+                    <div class="margin">
+                         <label class="modal-label" for="mail">
+                              Email
+                              <input class="modal-input" required type="text" placeholder="Nhập email..." name=""
+                                   id="mail">
+                         </label class="modal-label">
+                    </div>
+                    <div class="margin">
+                         <label class="modal-label" for="note">
+                              Nội dung
+                              <textarea class="modal-input" required placeholder="Nhập nội dung liên hệ..." name=""
+                                   id="note" cols="30" rows="6"></textarea>
+                         </label>
+                    </div>
+                    <button class="modal-button">Gửi đi</button>
+               </form>
+          </div>
+          </form>
+     </label>
+     <!--  end liên hệ -->
+
+   <!--  begin accessory-->
+   <div class="accessory__main">
+
+      <!-- Begin header -->
+      <header class="heading">
+         <div class="heading__left">
+            <img src="images/accessory/heading.png" alt="">
+         </div>
+         <div class="heading__right">
+            <img src="images/accessory/heading1.png" alt="">
+            <img src="images/accessory/heading2.png" alt="">
+         </div>
+      </header>
+      <!-- End header -->
+
+      <!-- Begin danh mục -->
+      <div class="menu-top menu__top--background">
+         <div class="menu-top__list acs__list">
+            <a href="#" class="menu-top__list__item acs__list__item">
+               <div class="box-icon acs__list__item--icon">
+                  <i class='bx bxs-mouse item-icon'></i>
+               </div>
+               <p>Chuột</p>
+            </a>
+            <a href="#" class="menu-top__list__item acs__list__item">
+               <div class="box-icon acs__list__item--icon">
+                  <i class='bx bxs-keyboard item-icon'></i>
+               </div>
+               <p>Bàn phím</p>
+            <a href="#" class="menu-top__list__item acs__list__item">
+               <div class="box-icon acs__list__item--icon">
+                  <i class='bx bx-wifi item-icon'></i>
+               </div>
+               <p>Thiết bị mạng</p>
+            </a>
+            <a href="#" class="menu-top__list__item acs__list__item">
+               <div class="box-icon acs__list__item--icon">
+                  <i class='bx bxs-webcam item-icon' ></i>
+               </div>
+               <p>Camera - Webcam</p>
+            </a>
+            <a href="#" class="menu-top__list__item acs__list__item">
+               <div class="box-icon acs__list__item--icon">
+                  <i class='bx bxs-shopping-bags item-icon'></i>
+               </div>
+               <p>Balo - túi chống sốc</p>
+            </a>
+            <a href="#" class="menu-top__list__item acs__list__item">
+               <div class="box-icon acs__list__item--icon">
+                  <i class='bx bxl-microsoft item-icon'></i>
+               </div>
+               <p>Phần mềm</p>
+            </a>
+         </div>
+      </div>
+      <!-- End danh mục -->
+
+      <!-- Begin box gaming 1-->
+      <div class="container acs__container">
+         <div class="Products acs__Products">
+            <!-- Begin SP1 -->
+            <div class="Product acs__Product">
+               <div class="Product-content acs__Product-content">
+                  <a href="ProductMouse.html"> <img class="Product-img acs__Product--img" src="images/chuot_img/sp1.jpg" alt=""></a>
+                  <a class="Product-name" href="ProductMouse.html">ASUS Gaming TUF FX506HCB-
+                     HN1138W/i5-11400H</a>
+                  <div class="Product-price">471.000đ</div>
+                  <del class="Product-del">550.000đ</del>
+               </div>
+            </div>
+            <!-- End SP1 -->
+            <!-- Begin SP1 -->
+            <div class="Product acs__Product">
+               <div class="Product-content acs__Product-content">
+                  <a href="ProductMouse.html"> <img class="Product-img acs__Product--img" src="images/chuot_img/sp2.jpg" alt=""></a>
+                  <a class="Product-name" href="ProductMouse.html">Chuột Có Dây Gaming Zadez G-
+                     610M</a>
+                  <div class="Product-price">171.000đ</div>
+                  <del class="Product-del">210.000đ</del>
+               </div>
+            </div>
+            <!-- End SP1 -->
+            <!-- Begin SP1 -->
+            <div class="Product acs__Product">
+               <div class="Product-content acs__Product-content">
+                  <a href="ProductMouse.html"> <img class="Product-img acs__Product--img" src="images/chuot_img/sp3.jpg" alt=""></a>
+                  <a class="Product-name" href="ProductMouse.html">Chuột Có Dây Gaming Logitech
+                     G403 Hero</a>
+                  <div class="Product-price">1.990.000đ</div>
+                  <del class="Product-del">2.190.000đ</del>
+               </div>
+            </div>
+            <!-- End SP1 -->
+            <!-- Begin SP1 -->
+            <div class="Product acs__Product">
+               <div class="Product-content acs__Product-content">
+                  <a href="ProductMouse.html"> <img class="Product-img acs__Product--img" src="images/chuot_img/sp4.jpg" alt=""></a>
+                  <a class="Product-name" href="ProductMouse.html">Chuột Có Dây Gaming Logitech
+                     G502 Hero</a>
+                  <div class="Product-price">1.390.000đ</div>
+                  <del class="Product-del">1.890.000đ</del>
+               </div>
+            </div>
+            <!-- End SP1 -->
+            <!-- Begin SP1 -->
+            <div class="Product acs__Product">
+               <div class="Product-content acs__Product-content">
+                  <a href="ProductMouse.html"> <img class="Product-img acs__Product--img" src="images/chuot_img/sp5.jpg" alt=""></a>
+                  <a class="Product-name" href="ProductMouse.html">Chuột Có Dây Gaming Razer
+                     DeathAdder V2</a>
+                  <div class="Product-price">1.290.000đ</div>
+                  <del class="Product-del">1.390.000đ</del>
+               </div>
+            </div>
+            <!-- End SP1 -->
+         </div>
+         <div class="Products acs__Products">
+            <!-- Begin SP1 -->
+            <div class="Product acs__Product">
+               <div class="Product-content acs__Product-content">
+                  <a href="ProductMouse.html"> <img class="Product-img acs__Product--img" src="images/chuot_img/sp6.jpg" alt=""></a>
+                  <a class="Product-name" href="ProductMouse.html">Chuột Không Dây Bluetooth
+                     Gaming Corsair Harpoon RGB...</a>
+                  <div class="Product-price">790.000đ</div>
+                  <del class="Product-del">890.000đ</del>
+               </div>
+            </div>
+            <!-- End SP1 -->
+            <!-- Begin SP1 -->
+            <div class="Product acs__Product">
+               <div class="Product-content acs__Product-content">
+                  <a href="ProductMouse.html"> <img class="Product-img acs__Product--img" src="images/chuot_img/sp7.jpg" alt=""></a>
+                  <a class="Product-name" href="ProductMouse.html">Chuột Có Dây Gaming HyperX
+                     Pulsefire Surge RGB</a>
+                  <div class="Product-price">600.000đ</div>
+                  <del class="Product-del">890.000đ</del>
+               </div>
+            </div>
+            <!-- End SP1 -->
+            <!-- Begin SP1 -->
+            <div class="Product acs__Product">
+               <div class="Product-content acs__Product-content">
+                  <a href="ProductMouse.html"> <img class="Product-img acs__Product--img" src="images/chuot_img/sp8.jpg" alt=""></a>
+                  <a class="Product-name" href="ProductMouse.html">Chuột Có Dây Gaming HyperX
+                     Pulsefire FPS Pro RGB</a>
+                  <div class="Product-price">840.000đ</div>
+                  <del class="Product-del">990.000đ</del>
+               </div>
+            </div>
+            <!-- End SP1 -->
+            <!-- Begin SP1 -->
+            <div class="Product acs__Product">
+               <div class="Product-content acs__Product-content">
+                  <a href="ProductMouse.html"> <img class="Product-img acs__Product--img" src="images/chuot_img/sp9.jpg" alt=""></a>
+                  <a class="Product-name" href="/ProductMouse.html">Chuột Có Dây Gaming Asus TUF
+                     M3</a>
+                  <div class="Product-price">450.000đ</div>
+                  <del class="Product-del">670.000đ</del>
+               </div>
+            </div>
+            <!-- End SP1 -->
+            <!-- Begin SP1 -->
+            <div class="Product acs__Product">
+               <div class="Product-content acs__Product-content">
+                  <a href="ProductMouse.html"> <img class="Product-img acs__Product--img" src="images/chuot_img/sp10.jpg" alt=""></a>
+                  <a class="Product-name" href="ProductMouse.html">Chuột Gaming HyperX Pulsefire
+                     Core RGB Đen</a>
+                  <div class="Product-price">550.000đ</div>
+                  <del class="Product-del">890.000đ</del>
+               </div>
+            </div>
+            <!-- End SP1 -->
+         </div>
+         <!-- End box gaming 1-->
+         <!-- Begin box gaming 2-->
+         <input type="checkbox" hidden name="" class="Products-input-gaming" id="Products-input-more-gaming">
+         <div class="Products-more-gaming">
+            <div class="Products">
+               <!-- Begin SP1 -->
+            <div class="Product acs__Product">
+               <div class="Product-content acs__Product-content">
+                  <a href="ProductMouse.html"> <img class="Product-img acs__Product--img" src="images/chuot_img/sp1.jpg" alt=""></a>
+                  <a class="Product-name" href="ProductMouse.html">ASUS Gaming TUF FX506HCB-
+                     HN1138W/i5-11400H</a>
+                  <div class="Product-price">23.990.000đ</div>
+                  <del class="Product-del">25.890.000đ</del>
+               </div>
+            </div>
+            <!-- End SP1 -->
+               <!-- Begin SP1 -->
+            <div class="Product acs__Product">
+               <div class="Product-content acs__Product-content">
+                  <a href="ProductMouse.html"> <img class="Product-img acs__Product--img" src="images/chuot_img/sp1.jpg" alt=""></a>
+                  <a class="Product-name" href="ProductMouse.html">ASUS Gaming TUF FX506HCB-
+                     HN1138W/i5-11400H</a>
+                  <div class="Product-price">23.990.000đ</div>
+                  <del class="Product-del">25.890.000đ</del>
+               </div>
+            </div>
+            <!-- End SP1 -->
+               <!-- Begin SP1 -->
+            <div class="Product acs__Product">
+               <div class="Product-content acs__Product-content">
+                  <a href="ProductMouse.html"> <img class="Product-img acs__Product--img" src="images/chuot_img/sp1.jpg" alt=""></a>
+                  <a class="Product-name" href="ProductMouse.html">ASUS Gaming TUF FX506HCB-
+                     HN1138W/i5-11400H</a>
+                  <div class="Product-price">23.990.000đ</div>
+                  <del class="Product-del">25.890.000đ</del>
+               </div>
+            </div>
+            <!-- End SP1 -->
+               <!-- Begin SP1 -->
+            <div class="Product acs__Product">
+               <div class="Product-content acs__Product-content">
+                  <a href="ProductMouse.html"> <img class="Product-img acs__Product--img" src="images/chuot_img/sp1.jpg" alt=""></a>
+                  <a class="Product-name" href="ProductMouse.html">ASUS Gaming TUF FX506HCB-
+                     HN1138W/i5-11400H</a>
+                  <div class="Product-price">23.990.000đ</div>
+                  <del class="Product-del">25.890.000đ</del>
+               </div>
+            </div>
+            <!-- End SP1 -->
+               <!-- Begin SP1 -->
+            <div class="Product acs__Product">
+               <div class="Product-content acs__Product-content">
+                  <a href="ProductMouse.html"> <img class="Product-img acs__Product--img" src="images/chuot_img/sp1.jpg" alt=""></a>
+                  <a class="Product-name" href="ProductMouse.html">ASUS Gaming TUF FX506HCB-
+                     HN1138W/i5-11400H</a>
+                  <div class="Product-price">23.990.000đ</div>
+                  <del class="Product-del">25.890.000đ</del>
+               </div>
+            </div>
+            <!-- End SP1 -->
+            </div>
+         </div>
+         <label for="Products-input-more-gaming" class="Products-more-text"><span class="more-text more-text-gaming acs__more--text">Xem thêm chuột máy tính</span>
+            <div id="macbook"></div>
+         </label>
+      </div>
+      <!-- End box gaming 2-->
+   </div>
+   <!--  end accessory -->
+
+   <!-- Begin footer -->
+   <a href="#TOP" class="lenDauTrang"><i class='bx bx-chevron-up'></i></a>
+   <footer>
+        <div class="footer-content">
+             <div class="header-logo footer-logo">
+                  <h2 class="logo-name logo-name-line-height">FPoly<span class="logo-subname while">Store</span
+                            class=""></h2>
+                  <p class="logo-text">Uy tín - Chất lượng</p>
+                  <div class="logo-img">
+                       <a href="https://www.facebook.com/" class="logo-img-item"><i class='bx bxl-facebook-circle' ></i></a>
+                       <a href="https://www.youtube.com/index" class="logo-img-item"><i class='bx bxl-youtube'></i></a>
+                       <a href="https://www.instagram.com/" class="logo-img-item"><i class='bx bxl-instagram-alt'></i></a>
+                       <a href="https://www.linkedin.com/" class="logo-img-item"><i class='bx bxl-linkedin'></i></i></a>
+                       <a href="https://twitter.com/" class="logo-img-item"><i class='bx bxl-twitter'></i></a>
+                       <a href="https://skype.com/" class="logo-img-item"><i class='bx bxl-skype'></i></a>
+                  </div>
+             </div>
+             <div class="footer-link">
+                  <h3 class="link-heading">Quick Links</h3>
+                  <a href="index.html">Trang chủ</a>
+                  <a href="accessory.html">Phụ kiện</a>
+                  <a href=""><label for="modal-input" >Liên hệ</label></a>
+                  <a href="AboutUs.html">About us</a>
+                  <a href="FAQ.html">FAQs</a>
+             </div>
+             <div class="footer-link">
+                  <h3 class="link-heading">Phụ kiện</h3>
+                  <a href="accessory.html">Chuột, bàn phím</a>
+                  <a href="accessory.html">Thiết bị mạng</a>
+                  <a href="accessory.html">Camera, Webcam</a>
+                  <a href="accessory.html">Balo, túi chống sóc</a>
+                  <a href="accessory.html">Phần mềm</a>
+             </div>
+             <div class="footer-end">
+                  <label for="modal-input"><h3 class="link-heading">Liên hệ</h3> </label>
+                  <div class="end-heading">
+                       <div class="end-icon"><i class='bx bxs-phone'></i></div>
+                       <div class="end-text">1800 1999</div>
+                  </div>
+                  <div class="end-heading">
+                       <div class="end-icon"><i class='bx bxs-map'></i></div>
+                       <div class="end-text">TP. Hồ Chí Minh</div>
+                  </div>
+                  <div class="end-heading">
+                       <div class="end-icon"><i class='bx bxl-gmail'></i></div>
+                       <div class="end-text">fpolystore@gmail.com.vn</div>
+                  </div>
+                  <div class="end-heading">
+                       <div class="end-icon"><i class='bx bx-time-five'></i></div>
+                       <div class="end-text">Thứ 2 - Thứ 7<br>8:00 am - 21:00 pm</div>
+                  </div>
+             </div>
+        </div>
+        <div class="footer-heading-end">FPoly Store © 2022. All rights reserved</div>
+   </footer>
+   <!-- End footer -->
+</body>
+
+</html>
